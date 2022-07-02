@@ -1,0 +1,47 @@
+  /* start tab */
+  .tabs{
+    width: 700px;
+    background-color: #ecebecf5;
+    margin: 15px auto;
+    }
+    .tabs>input{
+    display: none;
+    }
+    .tabs>label{
+    display: block;
+    float: left;
+    padding: 12px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    }
+    .tabs>label:hover,
+    .tabs>input:checked + label{
+    background-color: #1e87f0;
+    }
+    .tab{
+    clear: both;
+    perspective: auto;
+    }
+    .tab>div{
+    width: auto;
+    position: absolute;
+    border-radius: 5px;
+    margin-top: 40px;
+    padding: 20px 40px 40px;
+    line-height: 1.2em;
+    z-index: 1; 
+    display: none;
+    }
+    #tab-nav-1:checked ~ .tab > div:nth-of-type(1),
+    #tab-nav-2:checked ~ .tab > div:nth-of-type(2),
+    #tab-nav-3:checked ~ .tab > div:nth-of-type(3),
+    #tab-nav-4:checked ~ .tab > div:nth-of-type(4),
+    #tab-nav-5:checked ~ .tab > div:nth-of-type(5),
+    #tab-nav-6:checked ~ .tab > div:nth-of-type(6),
+    #tab-nav-7:checked ~ .tab > div:nth-of-type(7),
+    #tab-nav-8:checked ~ .tab > div:nth-of-type(8){
+    display: block;
+    z-index: 1;
+    }
+    /* end tab */
