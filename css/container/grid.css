@@ -1,26 +1,25 @@
 .code_grid{
       display: grid;
-      grid-template-columns: 100% repeat(4,70%);
-      grid-template-rows: 3fr 14fr 34fr 4fr;;
+      grid-template-columns: repeat(5,1fr);
+      grid-template-rows: repeat(3,1fr);
       grid-template-areas: 
       "nav nav nav nav nav"
       "sidebar main main main main"
-      "sidebar content1 content2 content3 content3 "
-      "footer footer footer footer footer";
-      text-transform: uppercase;
+      "sidebar content1 content1 content1 content1 "
+      "sidebar footer footer footer footer";
       text-align: center;
       grid-gap: 0.1rem ;
 }
-nav{
-  background-color: #191932;
-  border-style: double;
+.nav_bar{
   grid-area: nav;
 }
 
-main{
+.main-grid{
   background-color: #191932;
-  border-style: double;
+  height: 60px;
   grid-area: main;
+  display: flex;
+  justify-content: center;
 }
 
 #content1{
@@ -28,20 +27,7 @@ main{
   border-style: double;
   grid-area: content1;
 }
-
-#content2{
-  background-color: #191932;
-  border-style: double;
-  grid-area: content2;
-}
-
-#content3{
-  background-color: #191932;
-  border-style: double;
-  grid-area: content3;
-}
-
-#sidebar{
+.sidebar{
   background-color: #191932;
   border-style: double;
   grid-area: sidebar;
