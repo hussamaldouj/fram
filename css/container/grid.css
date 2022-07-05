@@ -15,11 +15,7 @@
 }
 
 .main-grid{
-  background-color: #191932;
-  height: 60px;
   grid-area: main;
-  display: flex;
-  justify-content: center;
 }
 
 #content1{
