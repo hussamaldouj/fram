@@ -2,7 +2,8 @@
 margin: 0px;
 }
 body{
-background:#cbd0d4;
+background:url(/img/img2.jpeg) no-repeat;
+background-size: cover;
 display: block;
 position: relative;
 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -241,6 +242,7 @@ padding-left: 20px;
  }
  .side-bar-left input,.side-bar-left label{
     margin-left: 133px;
+    color: #fff;
  }
  .side-bar-left .menu{
     background: rgb(255, 255, 255,0.1);
@@ -269,10 +271,11 @@ padding-left: 20px;
 
  .side-bar-left .menu div a .child-1{
     width: 125px;
+    color: #fff;
  }
  .side-bar-left .menu div a .child-2{
     width: 50px;
-    text-align: center;
+    text-align: center;  
  }
   .side-bar-left .menu div:nth-child(1) a:hover i,
   .side-bar-left .menu div:nth-child(2) a:hover i,
@@ -338,6 +341,7 @@ padding-left: 20px;
  }
  .side-bar-right input,.side-bar-right label{
     margin-right: 144px;
+    color: #fff;
  }
  .side-bar-right .menu{
     background: rgb(255, 255, 255,0.1);
@@ -368,6 +372,7 @@ padding-left: 20px;
  .side-bar-right .menu div a .child-1{
     width: 40px;
     text-align: end;
+    color: #fff;
  }
  .side-bar-right .menu div a .child-2{
     width: 110px;
