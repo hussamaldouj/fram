@@ -248,8 +248,8 @@ padding-left: 20px;
     background: rgb(255, 255, 255,0.1);
     backdrop-filter: blur(15px);
     height: auto;
+    position: relative;
     left: 0px;
-    position: absolute;
     box-shadow: 0 0 6px rgb(3 1 12 / 88%);
 }
  .side-bar-left .menu div{
@@ -314,6 +314,7 @@ padding-left: 20px;
 .side-bar-left>label{
     display: block;
     padding: 10px;
+    position: relative;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -334,13 +335,15 @@ padding-left: 20px;
 #side-hide-left:checked ~ .menu div a .child-1{
    display: none;
  }
+ /* end side bar left */
+
  /* start side bar right */
  .side-bar-right{
     right: 0;
     position: absolute;
  }
  .side-bar-right input,.side-bar-right label{
-    margin-right: 144px;
+    margin-left: 10px;
     color: #fff;
  }
  .side-bar-right .menu{
@@ -348,7 +351,7 @@ padding-left: 20px;
     backdrop-filter: blur(15px);
     height: auto;
     right: 0;
-    position: absolute;
+    position: relative;
     box-shadow: 0 0 6px rgb(3 1 12 / 88%);
 }
  .side-bar-right .menu div{
@@ -415,13 +418,14 @@ padding-left: 20px;
     display: block;
     padding: 10px;
     cursor: pointer;
+    position: relative;
     transition: background-color 0.3s;
 }
  .side-bar-right .menu>div{ 
     width: 190px;
     }
 #side-hide-right:checked ~ .menu>div{
-    width: 50px;
+    width: 55px;
     height: 80%;
     overflow: hidden;
     margin-right: 0px;
@@ -434,3 +438,7 @@ padding-left: 20px;
 #side-hide-right:checked ~ .menu div a .child-1{
    display: none;
  }
+ /* end side bar right */
+
+  /* start side bar responsive */
+ 
