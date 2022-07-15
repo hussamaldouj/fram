@@ -1,0 +1,48 @@
+.code_grid{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas: 
+    "nav_bar_1 nav_bar_1 nav_bar_1 nav_bar_1 nav_bar_1"
+    ". . . . ."
+    "nav_bar_2 nav_bar_2 nav_bar_2 nav_bar_2 nav_bar_2"
+    ". . . . ."
+    "nav_bar_3 nav_bar_3 nav_bar_3 nav_bar_3 nav_bar_3"
+    "sidebar footer footer footer footer";
+    text-align: center;
+    grid-gap: 0.3rem ;
+}
+.nav_bar_1{
+grid-area: nav_bar_1;
+}
+.nav_bar_2{
+grid-area: nav_bar_2;
+}
+.nav_bar_3{
+grid-area: nav_bar_3;
+}
+#content1{
+background-color: #191932;
+border-style: double;
+grid-area: content1;
+}
+.sidebar{
+background-color: #191932;
+border-style: double;
+grid-area: sidebar;
+}
+
+footer{
+background-color: #191932;
+border-style: double;
+grid-area: footer;
+}
+@media only screen and (max-width: 1200px){
+}
+@media only screen and (max-width: 991px){
+
+}
+@media only screen and (max-width: 768px){
+}
+@media only screen and (max-width: 575px){
+}

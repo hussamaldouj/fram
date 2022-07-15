@@ -8,8 +8,8 @@ display: block;
 position: relative;
 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-/* start nav bar on header */
-.nav_bar{
+/* start nav-bar-1 on header */
+.nav_bar_1{
     height: 40px;
     background-color: #191932;
     position: sticky;
@@ -100,14 +100,14 @@ display: block;
 background: #F2F2F2;
 color: #444444;
 }
- /* end nav bar header */
- /* start nav bar second */
- .main-grid{
-    background-color: #191932;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-  }
+ /* end nav-bar-1 header  */
+ /* start nav-bar-2 */
+.main-grid{
+background-color: #191932;
+height: 50px;
+display: flex;
+justify-content: center;
+}
 #nav-2{
     display: flex;
     padding: 0px;
@@ -144,7 +144,7 @@ color: #444444;
    background-color: #0e243a;
    transition:  ease 0.6s;
 }
- #nav-2 li:nth-child(1) a i{
+#nav-2 li:nth-child(1) a i{
     color: #1e87f0;
 }
 #nav-2 li:nth-child(2) a i{
@@ -159,7 +159,66 @@ color: #444444;
 #nav-2 li:nth-child(5) a i{
     color: #be0fe0;
 }
-  /* end nav bar second */
+  /* end nav-bar-2*/
+/* start nav-bar-3 */
+.main-grid{
+background-color: #191932;
+height: 50px;
+display: flex;
+justify-content: center;
+}
+#nav-3{
+display: flex;
+padding: 0px;
+width: 450px;
+height: 50px;
+position: absolute;
+box-shadow: 0 0 24px rgb(3 1 12 / 88%);
+}
+#nav-3 li{
+flex: 1;
+padding: 15px;
+list-style: none;
+text-align: center;
+}
+#nav-3 li a i{
+font-size:1.6em;
+}
+#nav-3 li a{
+text-decoration: none; 
+}
+#nav-3 li:nth-child(1) a:hover i,
+#nav-3 li:nth-child(2) a:hover i,
+#nav-3 li:nth-child(3) a:hover i,
+#nav-3 li:nth-child(4) a:hover i,
+#nav-3 li:nth-child(5) a:hover i{
+color: #cbd0d4;
+transition:  ease 0.6s;
+}
+#nav-3 li:nth-child(1):hover,
+#nav-3 li:nth-child(2):hover,
+#nav-3 li:nth-child(3):hover,
+#nav-3 li:nth-child(4):hover,
+#nav-2 li:nth-child(5):hover{
+background-color: #0e243a;
+transition:  ease 0.6s;
+}
+#nav-3 li:nth-child(1) a i{
+color: #1e87f0;
+}
+#nav-3 li:nth-child(2) a i{
+color: #df3c0b;
+}
+#nav-3 li:nth-child(3) a i{
+color: #0d31d1;
+}
+#nav-3 li:nth-child(4) a i{
+color: #dfd110;
+}
+#nav-3 li:nth-child(5) a i{
+color: #be0fe0;
+}
+/* end nav-bar-3*/
  /* start nav bar mobile */
  .icon_mobile{
     display: none;
