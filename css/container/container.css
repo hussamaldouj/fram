@@ -2,10 +2,12 @@
 margin: 0px;
 }
 body{
-background: #212131;
-display: block;
-position: relative;
-font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --bs-body-bg: #121230;
+    background:var(--bs-body-bg);
+    box-shadow: -4px -4px 10px black, 4px 4px 10px black;
+    display: block;
+    position: relative;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 /* start col */
 .col{

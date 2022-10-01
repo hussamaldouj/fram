@@ -1,10 +1,12 @@
 *{
 margin: 0px;
+scroll-behavior: smooth;
 }
 body{
+  --bs-body-bg: #121230;
 min-height: 620px;
-/* background: #1f1f3d; */
-background: #cbd0d4;
+background:var(--bs-body-bg);
+box-shadow: -4px -4px 10px black, 4px 4px 10px black;
 display: block;
 position: relative;
 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -128,8 +130,8 @@ backdrop-filter: blur(10px);
 display: inline;
 color: #F2F2F2;
 margin-left:35px ;
-position: relative;
-top: calc(80%/3);
+position: absolute;
+top:0;
 }
 .Logo::first-letter{
 content: "";  
@@ -338,6 +340,7 @@ margin-right: 2px;
 list-style: none;
 height: auto;
 display: none;
+
 }
 .main-accordion p{
 color: #000;
