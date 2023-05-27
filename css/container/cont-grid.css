@@ -3,7 +3,9 @@
 }
 body{
     min-height: 100vh;
-    background: #fff;
+    --bs-body-bg: #121230;
+    background:var(--bs-body-bg);
+    box-shadow: -4px -4px 10px black, 0px -6px 6px black;
     display: block;
     direction: rtl;
     position: relative;
@@ -16,14 +18,14 @@ body{
   position: relative;
   top: 20px;
   grid-template-columns: 10fr 10fr 10fr 10fr 10fr 10fr;
-  grid-template-rows: 40vh repeat(1,70vh) repeat(2,min-content)
+  grid-template-rows: 50vh repeat(1,60vh) repeat(2,min-content)
                         repeat(1,min-content);              
   grid-template-areas:
   "col-1 col-1 col-1 col-1 col-1 col-1"
   "col-2 col-2 col-2 col-2 col-3 col-3"
   "col-4 col-4 col-4 col-5 col-5 col-5"
   "col-6 col-6 col-7 col-7 col-7 col-7"
-  "col-9 col-9 col-8 col-8 col-8 col-8"
+  "col-8 col-8 col-7 col-7 col-7 col-7"
    ;
   gap: 3vh;
   display: grid;
@@ -37,117 +39,88 @@ body{
 }
 .col-2{
   grid-area: col-2;
+  border-radius:10px;
+  background-color: blueviolet;
 }
 .col-3{
   grid-area: col-3;
+  border-radius:10px;
+  background-color: rgb(153, 43, 226);
 }
 .col-4{
   grid-area: col-4;
+  border-radius:10px;
+  background-color: rgb(153, 43, 226);
 }
 .col-5{
   grid-area: col-5;
+  border-radius:10px;
+  background-color: rgb(153, 43, 226);
 }
 .col-6{
   grid-area: col-6;
+  border-radius:10px;
+  background-color: rgb(153, 43, 226);
 }
 .col-7{
   grid-area: col-7;
+  border-radius:10px;
+  background-color: rgb(153, 43, 226);
 }
 .col-8{
   grid-area: col-8;
+  border-radius:10px;
+  background-color: rgb(127, 14, 202);
 }
 .col-9{
   grid-area: col-9;
+  border-radius:10px;
+  background-color: rgb(205, 43, 226);
 }
 @media only screen and (max-width: 1200px){
   .main {
-    grid-template-columns: 10fr 10fr 10fr 10fr;
-    grid-template-rows: 40vh repeat(6,min-content)
-    repeat(1,50vh) repeat(2,min-content);
+    grid-template-columns: 10fr 10fr 10fr 10fr 10fr 10fr;
+    grid-template-rows: 50vh repeat(1,60vh) repeat(2,min-content)
+                          repeat(1,min-content);              
     grid-template-areas:
-    "col-1 col-1 col-1 col-1"
-    "col-2 col-2 col-3 col-3"
-    "col-4 col-4 col-5 col-5"
-    "col-7 col-7 col-7 col-7"
-    "col-9 col-9 col-8 col-8"
-    "col-10 col-10 col-11 col-11"
-    "col-12 col-12 col-13 col-13"
-    "col-14 col-14 col-14 col-14"
-    "col-15 col-15 col-15 col-15"
-    "col-16 col-16 col-16 col-16"
+    "col-1 col-1 col-1 col-1 col-1 col-1"
+    "col-2 col-2 col-2 col-2 col-3 col-3"
+    "col-4 col-4 col-4 col-5 col-5 col-5"
+    "col-6 col-6 col-7 col-7 col-7 col-7"
+    "col-8 col-8 col-7 col-7 col-7 col-7"
      ;
   }
 }
 @media only screen and (max-width: 991px){
   .main {
-    grid-template-rows: 40vh repeat(7,min-content)
-   repeat(1,48vh) repeat(2,min-content);
+    grid-template-columns: 10fr 10fr 10fr 10fr 10fr 10fr;
+    grid-template-rows: 50vh repeat(1,60vh) repeat(2,min-content)
+                          repeat(1,min-content);              
     grid-template-areas:
-    "col-1 col-1 col-1 col-1"
-    "col-2 col-2 col-3 col-3"
-    "col-4 col-4 col-5 col-5"
-    "col-6 col-6 col-6 col-6"
-    "col-7 col-7 col-7 col-7"
-    "col-9 col-9 col-8 col-8"
-    "col-10 col-10 col-11 col-11"
-    "col-12 col-12 col-13 col-13"
-    "col-14 col-14 col-14 col-14"
-    "col-15 col-15 col-15 col-15"
-    "col-16 col-16 col-16 col-16"
+    "col-1 col-1 col-1 col-1 col-1 col-1"
+    "col-2 col-2 col-2 col-3 col-3 col-3"
+    "col-4 col-4 col-4 col-5 col-5 col-5"
+    "col-6 col-6 col-7 col-7 col-7 col-7"
+    "col-8 col-8 col-7 col-7 col-7 col-7"
      ;
+     
   }
 }
 @media only screen and (max-width: 768px){
   .main{
     grid-template-columns: 88vw ;
-    grid-template-rows: 40vh repeat(3,55vh) repeat(8,min-content) repeat(1,55vh)
-                        repeat(3,min-content);
+    grid-template-rows: 35vh  repeat(7,min-content);
     grid-template-areas:
     "col-1"
     "col-2" 
     "col-3"
     "col-4"
-    "col-5" 
+    "col-5"
+    "col-6" 
     "col-7"
-    "col-8"
-    "col-9"
-    "col-10"
-    "col-11"
-    "col-12"
-    "col-13"
-    "col-14"
-    "col-15"
-    "col-16" ;
-    margin-right: 10px;
+    "col-8";
+    margin-right: 0px;
     gap: 1vh;
   }
 }
-@media only screen and (max-width: 575px){
-  .main{
-    grid-template-columns: 88vw ;
-    grid-template-rows: 40vh repeat(1,min-content) repeat(1,50vh) repeat(3,min-content) repeat(1,55vh) 
-    repeat(1,min-content) repeat(1,55vh) repeat(7,min-content);
-    grid-template-areas:
-    "col-1"
-    "col-2" 
-    "col-3"
-    "col-4"
-    "col-5" 
-    "col-7"
-    "col-8"
-    "col-9"
-    "col-10"
-    "col-11"
-    "col-12"
-    "col-13"
-    "col-14"
-    "col-15"
-    "col-16" ;
-    margin-right: 10px;
-    gap: 1vh;
-  } 
-  
 
-
-
-}

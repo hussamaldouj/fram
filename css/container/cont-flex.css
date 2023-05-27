@@ -4,7 +4,7 @@ margin: 0px;
 body{
     --bs-body-bg: #121230;
     background:var(--bs-body-bg);
-    box-shadow: -4px -4px 10px black, 4px 4px 10px black;
+    box-shadow: -4px -4px 10px black, 0px -6px 6px black;
     display: block;
     position: relative;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
