@@ -666,6 +666,7 @@ label.active{
 .btn-light{
   background: var(--bs-light);
 }
+/* start card image */
 .card-nav{
   width: auto;
   height: auto;
@@ -785,6 +786,11 @@ label.active{
 .ul li i{
   color: #1e87f0;
 }
+.card-nav .con-text p button a{
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+/* end card image */
 @media only screen and (max-width: 1200px){
 
 }
