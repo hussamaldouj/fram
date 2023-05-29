@@ -499,6 +499,7 @@ label.active{
 }
 .tab div h3{
   text-align: center;
+  padding-top: 10px;
   color: #1e87f0;
 }
 .tab > div{
@@ -536,9 +537,6 @@ label.active{
   }
 }
 @media only screen and (max-width: 768px){
-div.row{
-     gap: 5px;
-  }
 } 
 .center{
   position: absolute;
@@ -577,13 +575,13 @@ div.row{
 }
 .content{
   width: 100%;
-  height: 200px;
+  height: 220px;
   padding: 1rem 1rem;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
   align-items: center;
-  justify-content: space-between;
-  
+  flex-direction: column;
 }
 .content::before{
   content: "";
@@ -597,7 +595,7 @@ div.row{
 }
 .content p{
   margin-top: 20px;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   flex: 1 0 20%;
   text-align: justify;
   color:#000;
@@ -668,6 +666,125 @@ div.row{
 .btn-light{
   background: var(--bs-light);
 }
+.card-nav{
+  width: auto;
+  height: auto;
+  border-radius: 20px;
+  margin: 5px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  backface-visibility: hidden;
+}
+.card-nav:hover{
+  transform: scale(1);
+}
+.card-nav:hover::after{
+  height: 280px;
+}
+.card-nav:hover img{
+  transform: scale(1.5);
+}
+.card-nav:hover .con-text p{
+  bottom: 0px;
+  opacity: 1;
+}
+.card-nav:hover ul{
+  transform: translate(0);
+  opacity: 1;
+}
+.card-nav::after{
+  content: '';
+  width: 100%;
+  left: 0px;
+  bottom: 0px;
+  height: 150px;
+  position: absolute;
+  z-index: 20;
+  transition: all .25s ease;
+}
+.card-nav img{
+  height: 100%;
+  z-index: 10;
+  transition: all 0.25s ease;
+}
+.card-nav .con-text{
+  z-index: 30;
+  position: absolute;
+  bottom: 0px;
+  color: #1e87f0;
+  padding: 20px;
+  padding-bottom: 30px;
+}
+.card-nav .con-text p{
+  font-size: 0.8rem;
+  opacity: 0;
+  margin-bottom: 0px;
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.card-nav .con-text p button{
+  padding: 7px 17px;
+  border-radius: 12px;
+  background:#ced4da;
+  border: 2px solid #ced4da;;
+  color: #1e87f0;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  font-size: 0.75rem;
+  outline: none;
+}
+.card-nav .con-text p button:hover{
+  background: #fff;
+  color: #1e87f0;
+}
+.card-nav .ul{
+  position: absolute;
+  right: 5px;
+  display: flex;
+  flex-direction: column;
+  z-index: 40;
+  border-radius: 14px;
+  opacity: 0;
+  transform: translate(100%);
+  transition: all 0.25s ease;
+}
+.card-nav .ul li{
+  list-style: none;
+  background-color: #ced4da;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  backface-visibility: hidden;
+  transition: all 0.25s ease;
+}
+.ul li:last-child{
+  border-radius: 0px 0px 12px 12px;
+}
+.ul li:first-child{
+  border-radius: 12px 12px 0px 0px;
+}
+.ul li:hover{
+  opacity: 1;
+  background: #fff;
+  border-radius: 6px;
+}
+.ul li i{
+  color: #1e87f0;
+}
 @media only screen and (max-width: 1200px){
 
 }
@@ -679,8 +796,14 @@ div.row{
 @media only screen and (max-width: 1200px){
 }
 @media only screen and (max-width: 991px){
+  .content{
+    height: 290px;
+  }
 }
 @media only screen and (max-width: 768px){
+  .content{
+    height: 235px;
+  }
 }
 @media only screen and (max-width: 575px){
 }
