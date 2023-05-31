@@ -55,21 +55,11 @@
         overflow-x: scroll;
         padding: 1.25rem 1.5rem;
         white-space: pre;
-        display: flex;
-        justify-content: center;
     }
     code, pre {
     -moz-osx-font-smoothing: auto;
     -webkit-font-smoothing: auto;
     font-family: monospace;
-    }
-    section {
-    display: block;
-    }
-    @media only screen and (max-width: 991px){
-            .section-module--content--FQ03U {
-                padding: 40px 32px;
-            }
     }
     </style>
     <link rel="stylesheet" href="/css/container/nav2c.css">
@@ -78,9 +68,9 @@
     <title>framework template</title>                                                                                                                                              
 </head>
     <body>
-        <nav class="navbar2c">
+        <nav class="nav2c">
             <a href="#" class="logo">Logo</a>
-            <input type="checkbox" id="toggler">
+            <input type="checkbox" name="side-hide-down" id="toggler">
             <label for="toggler"><i class="fas fa-list"></i></label>
             <div class="menu animated">
                 <ul class="dropdown-content">
@@ -109,33 +99,33 @@
             <div class="row">
                 <div class="col col-12">
                         <pre><code>
-                            &lt;nav class="navbar2c"&gt;
-                                &lt;a href="#" class="logo"&gt;Logo&lt;/a&gt;
-                                &lt;input type="checkbox" id="toggler"&gt;
-                                &lt;label for="toggler"&gt;&lt;i class="fas fa-list"&gt;&lt;/i&gt;&lt;/label&gt;
-                                &lt;div class="menu animated flipInX"&gt;
-                                    &lt;ul class="dropdown-content"&gt;
-                                        &lt;li&gt;&lt;a href="/index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
-                                        &lt;li&gt;&lt;a href="#"&gt;Front-End &lt;i class="fa fas fa-angle-down"&gt;&lt;/i&gt;&lt;/a&gt;
-                                            &lt;ul class="sub-menus animated flipInX"&gt;
-                                                &lt;li&gt;&lt;a href="/HTML.html"&gt;HTML5&lt;/a&gt;&lt;/li&gt;
-                                                &lt;li&gt;&lt;a href="/CSS3.html"&gt;CSS3&lt;/a&gt;&lt;/li&gt;
-                                                &lt;li&gt;&lt;a href="#"&gt;JAVASCRIPT&lt;/a&gt;&lt;/li&gt;
-                                            &lt;/ul&gt;
-                                            &lt;/li&gt;
-                                        &lt;li&gt;&lt;a href="#"&gt;Back-End &lt;i class="fa fas fa-angle-down"&gt;&lt;/i&gt;&lt;/a&gt;
-                                            &lt;ul class="sub-menus animated flipInX"&gt;
-                                                &lt;li&gt;&lt;a href="#PHP"&gt;PHP&lt;/a&gt;&lt;/li&gt;
-                                                &lt;li&gt;&lt;a href="#ASP"&gt;ASP&lt;/a&gt;&lt;/li&gt;
-                                            &lt;/ul&gt;
-                                        &lt;/li&gt;
-                                        &lt;li&gt;&lt;a href="#Library" class="nav-link"&gt;Library&lt;/a&gt;&lt;/li&gt;
-                                        &lt;li&gt;&lt;a href="#Activites" class="nav-link"&gt;Live video&lt;/a&gt;&lt;/li&gt;
-                                        &lt;li&gt;&lt;a href="#contact" class="nav-link"&gt;Contact&lt;/a&gt;&lt;/li&gt;
-                                        &lt;li&gt;&lt;a href="#About" class="nav-link"&gt;About us&lt;/a&gt;&lt;/li&gt;
-                                    &lt;/ul&gt;
-                                &lt;/div&gt;
-                            &lt;/nav&gt;
+&lt;nav class="navbar2c"&gt;
+    &lt;a href="#" class="logo"&gt;Logo&lt;/a&gt;
+    &lt;input type="checkbox" id="toggler"&gt;
+    &lt;label for="toggler"&gt;&lt;i class="fas fa-list"&gt;&lt;/i&gt;&lt;/label&gt;
+    &lt;div class="menu animated flipInX"&gt;
+        &lt;ul class="dropdown-content"&gt;
+            &lt;li&gt;&lt;a href="/index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Front-End &lt;i class="fa fas fa-angle-down"&gt;&lt;/i&gt;&lt;/a&gt;
+                &lt;ul class="sub-menus animated flipInX"&gt;
+                    &lt;li&gt;&lt;a href="/HTML.html"&gt;HTML5&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="/CSS3.html"&gt;CSS3&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;JAVASCRIPT&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Back-End &lt;i class="fa fas fa-angle-down"&gt;&lt;/i&gt;&lt;/a&gt;
+                &lt;ul class="sub-menus animated flipInX"&gt;
+                    &lt;li&gt;&lt;a href="#PHP"&gt;PHP&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#ASP"&gt;ASP&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;&lt;a href="#Library" class="nav-link"&gt;Library&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#Activites" class="nav-link"&gt;Live video&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#contact" class="nav-link"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#About" class="nav-link"&gt;About us&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
                         </code></pre>
                         </code>
                     </pre>
@@ -145,114 +135,114 @@
                 <div class="col col-12">
                     <pre>
                         <code>                    
-                            body{
-                                display: block;
-                                position: relative;
-                                --bs-body-bg: #121230;
-                                background:var(--bs-body-bg);
-                                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                                }
-                            /* start nav-bar-3 on header */
-                            .navbar2c{
-                                display: flex;
-                                flex-wrap: wrap;
-                                align-items: center;
-                                justify-content: space-between;
-                                background-color: aliceblue;
-                                padding: 15px;
-                            }
-                            .navbar2c a{
-                                text-decoration: none;
-                                color: inherit;
-                            }
-                            .logo{
-                                margin-right: 50px;
-                            }
-                            .dropdown-content{
-                                display: flex;
-                                list-style: none;
-                                gap: 25px;
-                            }
-                            .dropdown li{
-                            display: inline;
-                            list-style: none;
-                            float: right;
-                            font-weight: bold;
-                            padding: 10px; 
-                            border-radius: 5px;
-                            }
-                            .dropdown li a{
-                            text-decoration: none; 
-                            font-size: 16px;
-                            font-weight: 600;
-                            color: #1e87f0;
-                            margin-top: 5px;
-                            margin-left: 15px;
-                            padding:5px;
-                            }
-                            .dropdown li a:hover{
-                            border-bottom-color: #1e33f0 ;
-                            border-bottom-style:solid;
-                            z-index: 999; 
-                            }
-                            .sub-menus{
-                            height: auto;
-                            overflow: hidden;
-                            position: absolute;
-                            z-index: 1;
-                            border-radius: 5px;
-                            box-shadow: -4px -4px 10px #00000018;
-                            backdrop-filter: blur(20px);
-                            -webkit-border-radius: 5px;
-                            -moz-border-radius: 5px;
-                            -ms-border-radius: 5px;
-                            -o-border-radius: 5px;
-                            background-color: rgb(22 22 23 /80%);
-                            opacity: 0;
-                            width: 110px;
-                            padding-left: 0px;
-                            margin: 10px 0px 0px 0px;
-                            }
-                            .sub-menus li {
-                            width: 100%;
-                            }
-                            .sub-menus a {
-                            display: flex;
-                            color: #FFFFFF;
-                            font-size: 16px;
-                            justify-content: center;
-                            padding: 0.5rem 1rem;
-                            }
-                            li:hover .sub-menus {
-                            opacity: 1;
-                            }
-                            .sub-menus a:hover{
-                            background: #F2F2F2;
-                            color: #444444;
-                            }
-                            #toggler,.navbar2c label{
-                             display: none;
-                            }
-                            @media only screen and (max-width: 900px){
-                            .menu{
-                                width: 100%;
-                                max-height: 0;
-                                overflow: hidden;
-                            }
-                            .dropdown-content{
-                                flex-direction: column;
-                                align-items: center;
-                                padding: 20px;
-                            }
-                            .navbar2c label{
-                                display: inline-flex;
-                                align-items: center;
-                                cursor: pointer;
-                            }
-                            #toggler:checked ~ .menu{
-                                max-height: 100%;
-                            }
-                            }
+    body{
+        display: block;
+        position: relative;
+        --bs-body-bg: #121230;
+        background:var(--bs-body-bg);
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    /* start nav-bar-3 on header */
+    .navbar2c{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        background-color: aliceblue;
+        padding: 15px;
+    }
+    .navbar2c a{
+        text-decoration: none;
+        color: inherit;
+    }
+    .logo{
+        margin-right: 50px;
+    }
+    .dropdown-content{
+        display: flex;
+        list-style: none;
+        gap: 25px;
+    }
+    .dropdown li{
+    display: inline;
+    list-style: none;
+    float: right;
+    font-weight: bold;
+    padding: 10px; 
+    border-radius: 5px;
+    }
+    .dropdown li a{
+    text-decoration: none; 
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e87f0;
+    margin-top: 5px;
+    margin-left: 15px;
+    padding:5px;
+    }
+    .dropdown li a:hover{
+    border-bottom-color: #1e33f0 ;
+    border-bottom-style:solid;
+    z-index: 999; 
+    }
+    .sub-menus{
+    height: auto;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    border-radius: 5px;
+    box-shadow: -4px -4px 10px #00000018;
+    backdrop-filter: blur(20px);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: rgb(22 22 23 /80%);
+    opacity: 0;
+    width: 110px;
+    padding-left: 0px;
+    margin: 10px 0px 0px 0px;
+    }
+    .sub-menus li {
+    width: 100%;
+    }
+    .sub-menus a {
+    display: flex;
+    color: #FFFFFF;
+    font-size: 16px;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    }
+    li:hover .sub-menus {
+    opacity: 1;
+    }
+    .sub-menus a:hover{
+    background: #F2F2F2;
+    color: #444444;
+    }
+    #toggler,.navbar2c label{
+     display: none;
+    }
+    @media only screen and (max-width: 900px){
+    .menu{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .dropdown-content{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .navbar2c label{
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    #toggler:checked ~ .menu{
+        max-height: 100%;
+    }
+    }
                         </code>
                     </pre>
                 </div>

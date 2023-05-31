@@ -1,0 +1,100 @@
+body{
+    display: block;
+    position: relative;
+    --bs-body-bg: #121230;
+    background:var(--bs-body-bg);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+   /* start nav-bar-2 */
+   .main-grid{
+    background-color: #191932;
+    height: 60px;
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+    align-items: center;
+    }
+    #nav2d{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        width: 450px;
+        height: 60px;
+        position: absolute;
+        box-shadow: 0 0 24px rgb(3 1 12 / 88%);
+        transition:all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    #nav2d li{
+        flex: 1;
+        padding: 15px;
+        list-style: none;
+        text-align: center;
+    }
+    #nav2d li a i{
+        font-size:2.5em;
+     }
+     .main-grid #nav2d li a span{
+      position: absolute;
+      margin-top:75px;
+      margin-left: -14px;
+      padding-top: 2px;
+      border-radius: 5px;
+      height: 20px;
+      text-align: center;
+      width: 70px;
+      background: #a0b5c7;
+      opacity: 0;
+      pointer-events: none;
+      box-shadow: 0 10px 10px rgb(0 0 0 / 0.1);
+      transition:all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+   }
+   .main-grid #nav2d li a span::before{
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    top: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition:all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .main-grid #nav2d li a{
+        text-decoration: none; 
+     }
+     .main-grid #nav2d li:nth-child(1) a i,
+     .main-grid #nav2d li:nth-child(2) a i,
+     .main-grid #nav2d li:nth-child(3) a i,
+     .main-grid #nav2d li:nth-child(4) a i,
+     .main-grid #nav2d li:nth-child(5) a i{
+        color: #a0b5c7;
+        transition:  ease 0.3s;
+    }
+    .main-grid #nav2d li:nth-child(1) a:hover i{
+        color: #1e87f0;
+    }
+    .main-grid #nav2d li:nth-child(1):hover a span,
+    .main-grid #nav2d li:nth-child(2):hover a span,
+    .main-grid #nav2d li:nth-child(3):hover a span,
+    .main-grid #nav2d li:nth-child(4):hover a span,
+    .main-grid #nav2d li:nth-child(5):hover a span{
+      opacity: 1;
+      margin-top:55px;
+      visibility: visible;
+      pointer-events: auto;
+  }
+    .main-grid #nav2d li:nth-child(2) a:hover i{
+        color: #df3c0b;
+    }
+    .main-grid #nav2d li:nth-child(3) a:hover i{
+        color: #0d31d1;
+    }
+    .main-grid #nav2d li:nth-child(4) a:hover i{
+        color: #dfd110;
+    }
+    .main-grid #nav2d li:nth-child(5) a:hover i{
+        color: #be0fe0;
+    }
+      /* end nav-bar-2*/

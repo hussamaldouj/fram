@@ -260,7 +260,7 @@ background-color: rgba(3, 1, 12, 0.877);
 display: none;
 width: 160px;
 padding-left: 0px;
-margin: 10px 10px 10px -30px;
+margin: 0px 10px 10px -30px;
 }
 .sub-menus li {
 display: block;
@@ -800,7 +800,8 @@ label.active{
   z-index: 30;
   position: absolute;
   bottom: 0px;
-  color: #1e87f0;
+  color: #ffffff;
+  text-align: center;
   padding: 20px;
   padding-bottom: 30px;
 }
