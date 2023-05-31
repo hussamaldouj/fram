@@ -51,10 +51,12 @@
         word-wrap: normal;
         background-color: #04033a;
         color: #fafafa;
-        font-size: .875em;
-        overflow-x: auto;
+        font-size: 14px;
+        overflow-x: scroll;
         padding: 1.25rem 1.5rem;
         white-space: pre;
+        display: flex;
+        justify-content: center;
     }
     code, pre {
     -moz-osx-font-smoothing: auto;
@@ -82,15 +84,15 @@
             <div class="col col-12">
                 <pre>
                     <code>
-       &lt;div class="main-grid"&gt;
-       &lt;ul id="nav-2"&gt;
-           &lt;li&gt;&lt;a href="/index.html"&gt;&lt;i class="fa fas fa-home"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-           &lt;li&gt;&lt;a href="/HTML.html"&gt;&lt;i class="fa fab fa-html5"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-           &lt;li&gt;&lt;a href="/CSS3.html"&gt;&lt;i class="fa fab fa-css3"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-           &lt;li&gt;&lt;a href="#javascrpit"&gt;&lt;i class="fa fab fa-js"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-           &lt;li&gt;&lt;a href="/HTML.html"&gt;&lt;i class="fa fab fa-bootstrap"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-       &lt;/ul&gt;
-       &lt;/div&gt;
+                    &lt;div class="main-grid"&gt;
+                    &lt;ul id="nav-2"&gt;
+                        &lt;li&gt;&lt;a href="/index.html"&gt;&lt;i class="fa fas fa-home"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="/HTML.html"&gt;&lt;i class="fa fab fa-html5"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="/CSS3.html"&gt;&lt;i class="fa fab fa-css3"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#javascrpit"&gt;&lt;i class="fa fab fa-js"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="/HTML.html"&gt;&lt;i class="fa fab fa-bootstrap"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;/div&gt;
                     </code>
                 </pre>
             </div>
@@ -99,71 +101,71 @@
             <div class="col col-12">
                 <pre>
                     <code>                    
-        body{
-            display: block;
-            position: relative;
-            --bs-body-bg: #121230;
-            background:var(--bs-body-bg);
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            }
-            .main-grid{
-            background-color: #191932;
-            height: 80px;
-            display: flex;
-            justify-content: center;
-            }
-            #nav-2{
-                display: flex;
-                padding: 0px;
-                width: 450px;
-                height: 50px;
-                position: absolute;
-                box-shadow: 0 0 24px rgb(3 1 12 / 88%);
-            }
-            #nav-2 li{
-                flex: 1;
-                padding: 15px;
-                list-style: none;
-                text-align: center;
-            }
-            #nav-2 li a i{
-                font-size:1.6em;
-             }
-            #nav-2 li a{
-                text-decoration: none; 
-             }
-             #nav-2 li:nth-child(1) a:hover i,
-             #nav-2 li:nth-child(2) a:hover i,
-             #nav-2 li:nth-child(3) a:hover i,
-             #nav-2 li:nth-child(4) a:hover i,
-             #nav-2 li:nth-child(5) a:hover i{
-                color: #cbd0d4;
-                transition:  ease 0.6s;
-            }
-            #nav-2 li:nth-child(1):hover,
-            #nav-2 li:nth-child(2):hover,
-            #nav-2 li:nth-child(3):hover,
-            #nav-2 li:nth-child(4):hover,
-            #nav-2 li:nth-child(5):hover{
-               background-color: #0e243a;
-               transition:  ease 0.6s;
-            }
-            #nav-2 li:nth-child(1) a i{
-                color: #1e87f0;
-            }
-            #nav-2 li:nth-child(2) a i{
-                color: #df3c0b;
-            }
-            #nav-2 li:nth-child(3) a i{
-                color: #0d31d1;
-            }
-            #nav-2 li:nth-child(4) a i{
-                color: #dfd110;
-            }
-            #nav-2 li:nth-child(5) a i{
-                color: #be0fe0;
-            }
-              /* end nav-bar-2*/
+                    body{
+                        display: block;
+                        position: relative;
+                        --bs-body-bg: #121230;
+                        background:var(--bs-body-bg);
+                        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                        }
+                        .main-grid{
+                        background-color: #191932;
+                        height: 80px;
+                        display: flex;
+                        justify-content: center;
+                        }
+                        #nav-2{
+                            display: flex;
+                            padding: 0px;
+                            width: 450px;
+                            height: 50px;
+                            position: absolute;
+                            box-shadow: 0 0 24px rgb(3 1 12 / 88%);
+                        }
+                        #nav-2 li{
+                            flex: 1;
+                            padding: 15px;
+                            list-style: none;
+                            text-align: center;
+                        }
+                        #nav-2 li a i{
+                            font-size:1.6em;
+                        }
+                        #nav-2 li a{
+                            text-decoration: none; 
+                        }
+                        #nav-2 li:nth-child(1) a:hover i,
+                        #nav-2 li:nth-child(2) a:hover i,
+                        #nav-2 li:nth-child(3) a:hover i,
+                        #nav-2 li:nth-child(4) a:hover i,
+                        #nav-2 li:nth-child(5) a:hover i{
+                            color: #cbd0d4;
+                            transition:  ease 0.6s;
+                        }
+                        #nav-2 li:nth-child(1):hover,
+                        #nav-2 li:nth-child(2):hover,
+                        #nav-2 li:nth-child(3):hover,
+                        #nav-2 li:nth-child(4):hover,
+                        #nav-2 li:nth-child(5):hover{
+                        background-color: #0e243a;
+                        transition:  ease 0.6s;
+                        }
+                        #nav-2 li:nth-child(1) a i{
+                            color: #1e87f0;
+                        }
+                        #nav-2 li:nth-child(2) a i{
+                            color: #df3c0b;
+                        }
+                        #nav-2 li:nth-child(3) a i{
+                            color: #0d31d1;
+                        }
+                        #nav-2 li:nth-child(4) a i{
+                            color: #dfd110;
+                        }
+                        #nav-2 li:nth-child(5) a i{
+                            color: #be0fe0;
+                        }
+                        /* end nav-bar-2*/
                     </code>
                 </pre>
             </div>
