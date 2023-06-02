@@ -8,12 +8,15 @@ body{
 
    /* start nav-bar-2 */
    .main-grid{
-    background-color: #191932;
-    height: 60px;
+    background-color: #1a1a4e21;
+    height: 80px;
     display: flex;
-    margin-top: 25px;
     justify-content: center;
-    align-items: center;
+    position: sticky;
+    top: 15px;
+    z-index: 2;
+    margin-top: 0px;
+    backdrop-filter: blur(10px);
     }
     #nav2d{
         display: flex;
