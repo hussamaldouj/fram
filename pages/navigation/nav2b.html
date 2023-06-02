@@ -64,115 +64,192 @@
     </style>
     <link rel="stylesheet" href="/css/container/nav2b.css">
     <link rel="stylesheet" href="/css/vendors/animate.css">    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">                               
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">                               
     <title>framework template</title>                                                                                                                                              
 </head>
     <body>
-      <div class="main-grid">
-          <ul id="nav2b">
-              <li><a href="/index.html"><i class="fa fas fa-home"></i></a></li>
-              <li><a href="/HTML.html"><i class="fa fab fa-html5"></i></a></li>
-              <li><a href="/CSS3.html"><i class="fa fab fa-css3"></i></a></li>
-              <li><a href="#javascrpit"><i class="fa fab fa-js"></i></a></li>
-              <li><a href="/HTML.html"><i class="fa fab fa-bootstrap"></i></a></li>
-          </ul>
-      </div>
-      <div class="container">
-        <div class="row">
-            <div class="col col-12">
-                <pre>
-                    <code>
-&lt;div class="main-grid"&gt;
-&lt;ul id="nav-2"&gt;
-    &lt;li&gt;&lt;a href="/index.html"&gt;&lt;i class="fa fas fa-home"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="/HTML.html"&gt;&lt;i class="fa fab fa-html5"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="/CSS3.html"&gt;&lt;i class="fa fab fa-css3"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#javascrpit"&gt;&lt;i class="fa fab fa-js"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="/HTML.html"&gt;&lt;i class="fa fab fa-bootstrap"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-                    </code>
-                </pre>
+        <nav class="nav2b">
+            <a href="#" class="logo">Logo</a>
+            <input type="checkbox" name="side-hide-down" id="toggler">
+            <label for="toggler"><i class="fas fa-list"></i></label>
+            <div class="menu animated">
+                <ul class="dropdown-content">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="#">Front-End <i class="fa fas fa-angle-down"></i></a>
+                        <ul class="sub-menus">
+                            <li><a href="/HTML.html">HTML5</a></li>
+                            <li><a href="/CSS3.html">CSS3</a></li>
+                            <li><a href="#">JAVASCRIPT</a></li>
+                        </ul>
+                        </li>
+                    <li><a href="#">Back-End <i class="fa fas fa-angle-down"></i></a>
+                        <ul class="sub-menus">
+                            <li><a href="#PHP">PHP</a></li>
+                            <li><a href="#ASP">ASP</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#Library" class="nav-link">Library</a></li>
+                    <li><a href="#Activites" class="nav-link">Live video</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#About" class="nav-link">About us</a></li>
+                </ul>
             </div>
-        </div>
-        <div class="row">
-            <div class="col col-12">
-                <pre>
-                    <code>                    
-body{
-    display: block;
-    position: relative;
-    --bs-body-bg: #121230;
-    background:var(--bs-body-bg);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-    .main-grid{
-        background-color: #1a1a4e21;
-        height: 80px;
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col col-12">
+                        <pre><code>
+&lt;nav class="nav2b"&gt;
+    &lt;a href="#" class="logo"&gt;Logo&lt;/a&gt;
+    &lt;input type="checkbox" id="toggler"&gt;
+    &lt;label for="toggler"&gt;&lt;i class="fas fa-list"&gt;&lt;/i&gt;&lt;/label&gt;
+    &lt;div class="menu animated flipInX"&gt;
+        &lt;ul class="dropdown-content"&gt;
+            &lt;li&gt;&lt;a href="/index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Front-End &lt;i class="fa fas fa-angle-down"&gt;&lt;/i&gt;&lt;/a&gt;
+                &lt;ul class="sub-menus animated flipInX"&gt;
+                    &lt;li&gt;&lt;a href="/HTML.html"&gt;HTML5&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="/CSS3.html"&gt;CSS3&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;JAVASCRIPT&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Back-End &lt;i class="fa fas fa-angle-down"&gt;&lt;/i&gt;&lt;/a&gt;
+                &lt;ul class="sub-menus animated flipInX"&gt;
+                    &lt;li&gt;&lt;a href="#PHP"&gt;PHP&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#ASP"&gt;ASP&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;&lt;a href="#Library" class="nav-link"&gt;Library&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#Activites" class="nav-link"&gt;Live video&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#contact" class="nav-link"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#About" class="nav-link"&gt;About us&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+                        </code></pre>
+                        </code>
+                    </pre>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-12">
+                    <pre>
+                        <code>                    
+    body{
+        display: block;
+        position: relative;
+        --bs-body-bg: #121230;
+        background:var(--bs-body-bg);
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    /* start nav-bar-3 on header */
+    .nav2b{
         display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        background-color: aliceblue;
+        padding: 15px;
         position: sticky;
         top: 15px;
         z-index: 2;
-        margin-top: 0px;
-        backdrop-filter: blur(10px);
     }
-    #nav-2{
+    .nav2b a{
+        text-decoration: none;
+        color: inherit;
+    }
+    .logo{
+        margin-right: 50px;
+    }
+    .dropdown-content{
         display: flex;
-        padding: 0px;
-        width: 450px;
-        height: 50px;
-        position: absolute;
-        box-shadow: 0 0 24px rgb(3 1 12 / 88%);
-    }
-    #nav-2 li{
-        flex: 1;
-        padding: 15px;
         list-style: none;
-        text-align: center;
+        gap: 25px;
     }
-    #nav-2 li a i{
-        font-size:1.6em;
+    .dropdown li{
+    display: inline;
+    list-style: none;
+    float: right;
+    font-weight: bold;
+    padding: 10px; 
+    border-radius: 5px;
     }
-    #nav-2 li a{
-        text-decoration: none; 
+    .dropdown li a{
+    text-decoration: none; 
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e87f0;
+    margin-top: 5px;
+    margin-left: 15px;
+    padding:5px;
     }
-    #nav-2 li:nth-child(1) a:hover i,
-    #nav-2 li:nth-child(2) a:hover i,
-    #nav-2 li:nth-child(3) a:hover i,
-    #nav-2 li:nth-child(4) a:hover i,
-    #nav-2 li:nth-child(5) a:hover i{
-        color: #cbd0d4;
-        transition:  ease 0.6s;
+    .dropdown li a:hover{
+    border-bottom-color: #1e33f0 ;
+    border-bottom-style:solid;
+    z-index: 999; 
     }
-    #nav-2 li:nth-child(1):hover,
-    #nav-2 li:nth-child(2):hover,
-    #nav-2 li:nth-child(3):hover,
-    #nav-2 li:nth-child(4):hover,
-    #nav-2 li:nth-child(5):hover{
-    background-color: #0e243a;
-    transition:  ease 0.6s;
+    .sub-menus{
+    height: auto;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    border-radius: 5px;
+    box-shadow: -4px -4px 10px #00000018;
+    backdrop-filter: blur(20px);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: rgb(22 22 23 /80%);
+    opacity: 0;
+    width: 110px;
+    padding-left: 0px;
+    margin: 10px 0px 0px 0px;
     }
-    #nav-2 li:nth-child(1) a i{
-        color: #1e87f0;
+    .sub-menus li {
+    width: 100%;
     }
-    #nav-2 li:nth-child(2) a i{
-        color: #df3c0b;
+    .sub-menus a {
+    display: flex;
+    color: #FFFFFF;
+    font-size: 16px;
+    justify-content: center;
+    padding: 0.5rem 1rem;
     }
-    #nav-2 li:nth-child(3) a i{
-        color: #0d31d1;
+    li:hover .sub-menus {
+    opacity: 1;
     }
-    #nav-2 li:nth-child(4) a i{
-        color: #dfd110;
+    .sub-menus a:hover{
+    background: #F2F2F2;
+    color: #444444;
     }
-    #nav-2 li:nth-child(5) a i{
-        color: #be0fe0;
+    #toggler,.nav2b label{
+     display: none;
     }
-    /* end nav-bar-2*/
-                    </code>
-                </pre>
+    @media only screen and (max-width: 900px){
+    .menu{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .dropdown-content{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .nav2b label{
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    #toggler:checked ~ .menu{
+        max-height: 100%;
+    }
+    }
+                        </code>
+                    </pre>
+                </div>
             </div>
-        </div>
         </div>
     </body>
 </html>

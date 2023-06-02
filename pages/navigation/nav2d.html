@@ -64,139 +64,115 @@
     </style>
     <link rel="stylesheet" href="/css/container/nav2d.css">
     <link rel="stylesheet" href="/css/vendors/animate.css">    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">                               
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">                               
     <title>framework template</title>                                                                                                                                              
 </head>
     <body>
-        <div class="main-grid">
-            <ul id="nav2d">
-                <li><a href="/index.html"><span>home</span><i class="fa fas fa-home"></i></a></li>
-                <li><a href="/HTML.html"><span>HTML</span><i class="fa fab fa-html5"></i></a></li>
-                <li><a href="/CSS3.html"><span>CSS</span><i class="fa fab fa-css3"></i></a></li>
-                <li><a href="/CSS3.html"><span>javascript</span><i class="fa fab fa-js"></i></a></li>
-                <li><a href="/HTML.html"><span>bootstrap</span><i class="fa fab fa-bootstrap"></i></a></li>
-            </ul>
-        </div>
-            <div class="container">
-            <div class="row">
-                <div class="col col-12">
-                    <pre>
-                        <code>
+      <div class="main-grid">
+          <ul id="nav2d">
+              <li><a href="/index.html"><i class="fa fas fa-home"></i></a></li>
+              <li><a href="/HTML.html"><i class="fa fab fa-html5"></i></a></li>
+              <li><a href="/CSS3.html"><i class="fa fab fa-css3"></i></a></li>
+              <li><a href="#javascrpit"><i class="fa fab fa-js"></i></a></li>
+              <li><a href="/HTML.html"><i class="fa fab fa-bootstrap"></i></a></li>
+          </ul>
+      </div>
+      <div class="container">
+        <div class="row">
+            <div class="col col-12">
+                <pre>
+                    <code>
 &lt;div class="main-grid"&gt;
-    &lt;ul id="nav2d"&gt;
-        &lt;li&gt;&lt;a href="./index.html"&gt;&lt;span&gt;home&lt;/span&gt;&lt;i class="fa fas fa-home"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="./HTML.html"&gt;&lt;span&gt;HTML&lt;/span&gt;&lt;i class="fa fab fa-html5"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="./CSS3.html"&gt;&lt;span&gt;CSS&lt;/span&gt;&lt;i class="fa fab fa-css3"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="./CSS3.html"&gt;&lt;span&gt;JavaScript&lt;/span&gt;&lt;i class="fa fab fa-js"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="./HTML.html"&gt;&lt;span&gt;Bootstrap&lt;/span&gt;&lt;i class="fa fab fa-bootstrap"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
+&lt;ul id="nav2d"&gt;
+    &lt;li&gt;&lt;a href="/index.html"&gt;&lt;i class="fa fas fa-home"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/HTML.html"&gt;&lt;i class="fa fab fa-html5"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/CSS3.html"&gt;&lt;i class="fa fab fa-css3"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#javascrpit"&gt;&lt;i class="fa fab fa-js"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/HTML.html"&gt;&lt;i class="fa fab fa-bootstrap"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
                     </code>
-                    </pre>
-                </div>
+                </pre>
             </div>
-            <div class="row">
-                <div class="col col-12">
-                    <pre>
-                        <code>                    
- /* start nav-bar */
- .main-grid{
-    background-color: #1a1a4e21;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    position: sticky;
-    top: 15px;
-    z-index: 2;
-    margin-top: 0px;
-    backdrop-filter: blur(10px);
-  }
-  #nav2d{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 0px;
-      width: 450px;
-      height: 60px;
-      position: absolute;
-      box-shadow: 0 0 24px rgb(3 1 12 / 88%);
-      transition:all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  #nav2d li{
-      flex: 1;
-      padding: 15px;
-      list-style: none;
-      text-align: center;
-  }
-  #nav2d li a i{
-      font-size:2.5em;
-   }
-   .main-grid #nav2d li a span{
-    position: absolute;
-    margin-top:75px;
-    margin-left: -14px;
-    padding-top: 2px;
-    border-radius: 5px;
-    height: 20px;
-    text-align: center;
-    width: 70px;
-    background: #a0b5c7;
-    opacity: 0;
-    pointer-events: none;
-    box-shadow: 0 10px 10px rgb(0 0 0 / 0.1);
-    transition:all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
- }
- .main-grid #nav2d li a span::before{
-  position: absolute;
-  content: "";
-  height: 8px;
-  width: 8px;
-  background: #fff;
-  top: -3px;
-  left: 50%;
-  transform: translate(-50%) rotate(45deg);
-  transition:all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-.main-grid #nav2d li a{
-      text-decoration: none; 
-   }
-   .main-grid #nav2d li:nth-child(1) a i,
-   .main-grid #nav2d li:nth-child(2) a i,
-   .main-grid #nav2d li:nth-child(3) a i,
-   .main-grid #nav2d li:nth-child(4) a i,
-   .main-grid #nav2d li:nth-child(5) a i{
-      color: #a0b5c7;
-      transition:  ease 0.3s;
-  }
-  .main-grid #nav2d li:nth-child(1) a:hover i{
-      color: #1e87f0;
-  }
-  .main-grid #nav2d li:nth-child(1):hover a span,
-  .main-grid #nav2d li:nth-child(2):hover a span,
-  .main-grid #nav2d li:nth-child(3):hover a span,
-  .main-grid #nav2d li:nth-child(4):hover a span,
-  .main-grid #nav2d li:nth-child(5):hover a span{
-    opacity: 1;
-    margin-top:55px;
-    visibility: visible;
-    pointer-events: auto;
-}
-  .main-grid #nav2d li:nth-child(2) a:hover i{
-      color: #df3c0b;
-  }
-  .main-grid #nav2d li:nth-child(3) a:hover i{
-      color: #0d31d1;
-  }
-  .main-grid #nav2d li:nth-child(4) a:hover i{
-      color: #dfd110;
-  }
-  .main-grid #nav2d li:nth-child(5) a:hover i{
-      color: #be0fe0;
-  }
-                        </code>
-                    </pre>
-                </div>
+        </div>
+        <div class="row">
+            <div class="col col-12">
+                <pre>
+                    <code>                    
+body{
+    display: block;
+    position: relative;
+    --bs-body-bg: #121230;
+    background:var(--bs-body-bg);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .main-grid{
+        background-color: #1a1a4e21;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        top: 15px;
+        z-index: 2;
+        margin-top: 0px;
+        backdrop-filter: blur(10px);
+    }
+    #nav2d{
+        display: flex;
+        padding: 0px;
+        width: 450px;
+        height: 50px;
+        position: absolute;
+        box-shadow: 0 0 24px rgb(3 1 12 / 88%);
+    }
+    #nav2dli{
+        flex: 1;
+        padding: 15px;
+        list-style: none;
+        text-align: center;
+    }
+    #nav2d li a i{
+        font-size:1.6em;
+    }
+    #nav2d li a{
+        text-decoration: none; 
+    }
+    #nav2d li:nth-child(1) a:hover i,
+    #nav2d li:nth-child(2) a:hover i,
+    #nav2d li:nth-child(3) a:hover i,
+    #nav2d li:nth-child(4) a:hover i,
+    #nav2d li:nth-child(5) a:hover i{
+        color: #cbd0d4;
+        transition:  ease 0.6s;
+    }
+    #nav2d li:nth-child(1):hover,
+    #nav2d li:nth-child(2):hover,
+    #nav2d li:nth-child(3):hover,
+    #nav2d li:nth-child(4):hover,
+    #nav2d li:nth-child(5):hover{
+    background-color: #0e243a;
+    transition:  ease 0.6s;
+    }
+    #nav2d li:nth-child(1) a i{
+        color: #1e87f0;
+    }
+    #nav2d li:nth-child(2) a i{
+        color: #df3c0b;
+    }
+    #nav2d li:nth-child(3) a i{
+        color: #0d31d1;
+    }
+    #nav2d li:nth-child(4) a i{
+        color: #dfd110;
+    }
+    #nav2d li:nth-child(5) a i{
+        color: #be0fe0;
+    }
+    /* end nav-bar-2*/
+                    </code>
+                </pre>
             </div>
-            </div>
+        </div>
+        </div>
     </body>
 </html>

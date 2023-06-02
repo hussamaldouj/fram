@@ -68,214 +68,135 @@
     <title>framework template</title>                                                                                                                                              
 </head>
     <body>
-        <nav>
-            <label class="logo">DevsWeb</label>
-            <span></span>
-            <span></span>
-            <span></span>
-            <input type="checkbox" name="side-hide-right" id="check">
-            <label for="check" class="checkbtn"><i class="fa far fas fa-bars"></i></label>
-            <ul>
-                <li><a class="active" href="/index.html">Home </a></li>
-                <li><a href="/HTML.html">HTML5</a></li>
-                <li><a href="/CSS3.html">CSS3</a></li>
-                <li><a href="#">JAVASCRIPT</a></li>
-                <li><a href="#">REACT</a></li>
+        <div class="main-grid">
+            <ul id="nav2e">
+                <li><a href="/index.html"><span>home</span><i class="fa fas fa-home"></i></a></li>
+                <li><a href="/HTML.html"><span>HTML</span><i class="fa fab fa-html5"></i></a></li>
+                <li><a href="/CSS3.html"><span>CSS</span><i class="fa fab fa-css3"></i></a></li>
+                <li><a href="/CSS3.html"><span>javascript</span><i class="fa fab fa-js"></i></a></li>
+                <li><a href="/HTML.html"><span>bootstrap</span><i class="fa fab fa-bootstrap"></i></a></li>
             </ul>
-        </nav>
+        </div>
             <div class="container">
-                <div class="row">
-                    <div class="col col-12">
-                        <pre>
-                            <code>
-&lt;nav&gt;
-    &lt;label class="logo"&gt;DevsWeb&lt;/label&gt;
-    &lt;span&gt;&lt;/span&gt;
-    &lt;span&gt;&lt;/span&gt;
-    &lt;span&gt;&lt;/span&gt;
-    &lt;input type="checkbox" name="side-hide-right" id="check"&gt;
-    &lt;label for="check" class="checkbtn"&gt;&lt;i class="fa far fas fa-bars"&gt;&lt;/i&gt;&lt;/label&gt;
-    &lt;ul&gt;
-        &lt;li&gt;&lt;a class="active" href="/index.html"&gt;Home &lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="/HTML.html"&gt;HTML5&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="/CSS3.html"&gt;CSS3&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;JAVASCRIPT&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;REACT&lt;/a&gt;&lt;/li&gt;
+            <div class="row">
+                <div class="col col-12">
+                    <pre>
+                        <code>
+&lt;div class="main-grid"&gt;
+    &lt;ul id="nav2e"&gt;
+        &lt;li&gt;&lt;a href="./index.html"&gt;&lt;span&gt;home&lt;/span&gt;&lt;i class="fa fas fa-home"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="./HTML.html"&gt;&lt;span&gt;HTML&lt;/span&gt;&lt;i class="fa fab fa-html5"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="./CSS3.html"&gt;&lt;span&gt;CSS&lt;/span&gt;&lt;i class="fa fab fa-css3"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="./CSS3.html"&gt;&lt;span&gt;JavaScript&lt;/span&gt;&lt;i class="fa fab fa-js"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="./HTML.html"&gt;&lt;span&gt;Bootstrap&lt;/span&gt;&lt;i class="fa fab fa-bootstrap"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
-&lt;/nav&gt;
-                            </code>
-                        </pre>
-                    </div>
+&lt;/div&gt;
+                    </code>
+                    </pre>
                 </div>
-                <div class="row">
-                    <div class="col col-12">
-                        <pre>
-                            <code>                    
-body{
-    display: block;
-    position: relative;
-    --bs-body-bg: #121230;
-    background:var(--bs-body-bg);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-    nav{
-        background: dodgerblue;
-        height: 60px;
-        display: flex;
-        justify-content: space-between;
-     }
-     nav .logo{
-        position: absolute;
-        left: 65px;
-        padding: 15px;
-        font-size: 20px;
-     }
-     
-     nav .logo::first-letter{
-        font-size: 25px;
-     }
-     nav span:nth-child(2):after{
-        content: "";
-        position: absolute;
-        height: 30px;
-        left: 160px;
-        top: 0px;
-        width: 2px;
-        transform: rotate(90deg);
-        background: beige;
-        color: aliceblue;
-     }
-     nav span:nth-child(2)::before{
-        content: "";
-        position: absolute;
-        left: 175px;
-        top: 14px;
-        background: white;
-        height: 18px;
-        width: 2px;
-     }
-     
-     nav span:nth-child(3)::after{
-        content: "";
-        position: absolute;
-        top: 28px;
-        left:80px;
-        background: white;
-        transform: rotate(90deg);
-        height: 30px;
-        width: 2px;
-     }
-     nav span:nth-child(3)::before{
-        content: "";
-        position: absolute;
-        left: 65px;
-        top: 24px;
-        background: white;
-        height: 20px;
-        width: 2px
-     }
-     nav span:nth-child(4)::before{
-        content: "";
-        position: absolute;
-        left: 58px;
-        top: 30px;
-        background: rgb(204, 207, 10);
-        height: 18px;
-        width: 2px;
-        color: aliceblue;
-     }
-     nav span:nth-child(4)::after{
-        content: "";
-        position: absolute;
-        top: 33px;
-        left:73px;
-        background: #cccf0a;
-        transform: rotate(90deg);
-        height: 30px;
-        width: 2px;
-     }
-     nav ul{
-        margin-top: 5px;
-        margin-right: 20px;
-        list-style: none;
-        float:left;
-     }
-     nav ul li{
-        padding: 15px;
-        display: inline-block;
-        margin: 0 5px;
-     }
-     nav ul li a{
-        text-decoration: none;
-        font-weight: 900;
-        color: aliceblue;
-        padding: 7px 13px;
-        border-radius: 5px;
-     }
-     a.active,a:hover{
-        color: #134374;
-        transition: 0.6s all ease-in-out;
-        background-color: aliceblue;
-     }
-     .checkbtn{
-        font-size: 40px;
-        margin-top: 8px;
-        color: azure;
-        margin-right: 20px;
-        cursor: pointer;
-        display: none;
-     }
-     #check{
-        display: none;
-     }
-     @media (max-width: 952px){
-        ul li a{
-           display: none;
-        }
-        nav .logo{
-           left: 70px;
-           font-size: 18px;
-        }
-        nav .logo::first-letter{
-           font-size: 20px;
-        } 
-     }
-      @media only screen and (max-width:858px){
-     .checkbtn{
-        display: block;
-     }
-     ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #134374;
-        top: 55px;
-        left: -100%;
-        z-index: 999;
-        padding-inline-start: 0px;
-        transition: all 0.5s;
-        text-align: center;
-     }
-     nav ul li{
-        display: block;
-     }
-     nav ul li a{
-        font-size: 25px;
-        display: block;
-        color: aliceblue;
-     }
-     a:hover,a.active{
-        background: none;
-        color: #000;
-     }
-     #check:checked ~ ul{
-        left: 0;
-     }
-      }
-                            </code>
-                        </pre>
-                    </div>
+            </div>
+            <div class="row">
+                <div class="col col-12">
+                    <pre>
+                        <code>                    
+ /* start nav-bar */
+ .main-grid{
+    background-color: #1a1a4e21;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 15px;
+    z-index: 2;
+    margin-top: 0px;
+    backdrop-filter: blur(10px);
+  }
+  #nav2e{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0px;
+      width: 450px;
+      height: 60px;
+      position: absolute;
+      box-shadow: 0 0 24px rgb(3 1 12 / 88%);
+      transition:all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #nav2e li{
+      flex: 1;
+      padding: 15px;
+      list-style: none;
+      text-align: center;
+  }
+  #nav2e li a i{
+      font-size:2.5em;
+   }
+   .main-grid #nav2e li a span{
+    position: absolute;
+    margin-top:75px;
+    margin-left: -14px;
+    padding-top: 2px;
+    border-radius: 5px;
+    height: 20px;
+    text-align: center;
+    width: 70px;
+    background: #a0b5c7;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0 10px 10px rgb(0 0 0 / 0.1);
+    transition:all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+ }
+ .main-grid #nav2e li a span::before{
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  top: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition:all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.main-grid #nav2e li a{
+      text-decoration: none; 
+   }
+   .main-grid #nav2e li:nth-child(1) a i,
+   .main-grid #nav2e li:nth-child(2) a i,
+   .main-grid #nav2e li:nth-child(3) a i,
+   .main-grid #nav2e li:nth-child(4) a i,
+   .main-grid #nav2e li:nth-child(5) a i{
+      color: #a0b5c7;
+      transition:  ease 0.3s;
+  }
+  .main-grid #nav2e li:nth-child(1) a:hover i{
+      color: #1e87f0;
+  }
+  .main-grid #nav2e li:nth-child(1):hover a span,
+  .main-grid #nav2e li:nth-child(2):hover a span,
+  .main-grid #nav2e li:nth-child(3):hover a span,
+  .main-grid #nav2e li:nth-child(4):hover a span,
+  .main-grid #nav2e li:nth-child(5):hover a span{
+    opacity: 1;
+    margin-top:55px;
+    visibility: visible;
+    pointer-events: auto;
+}
+  .main-grid #nav2e li:nth-child(2) a:hover i{
+      color: #df3c0b;
+  }
+  .main-grid #nav2e li:nth-child(3) a:hover i{
+      color: #0d31d1;
+  }
+  .main-grid #nav2e li:nth-child(4) a:hover i{
+      color: #dfd110;
+  }
+  .main-grid #nav2e li:nth-child(5) a:hover i{
+      color: #be0fe0;
+  }
+                        </code>
+                    </pre>
                 </div>
+            </div>
             </div>
     </body>
 </html>
