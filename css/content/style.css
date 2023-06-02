@@ -659,7 +659,7 @@ label.active{
 }
 .content{
   width: 100%;
-  height: 295px;
+  height: 220px;
   padding: 1rem 1rem;
   display: flex;
   flex-wrap: wrap;
@@ -805,7 +805,7 @@ label.active{
   color: #ffffff;
   text-align: center;
   padding: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 0px;
 }
 .card-nav .con-text p{
   font-size: 0.8rem;
@@ -889,7 +889,7 @@ label.active{
 }
 @media only screen and (max-width: 991px){
   .content{
-    height: 390px;
+    height: 290px;
   }
 }
 @media only screen and (max-width: 768px){
