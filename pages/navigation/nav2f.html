@@ -62,47 +62,18 @@
     font-family: monospace;
     }
     </style>
-    <link rel="stylesheet" href="/css/container/nav2f.css">
+    <link rel="stylesheet" href="/css/container/nav2c.css">
     <link rel="stylesheet" href="/css/vendors/animate.css">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">                               
     <title>framework template</title>                                                                                                                                              
 </head>
     <body>
-        <nav>
-            <label class="logo">DevsWeb</label>
-            <span></span>
-            <span></span>
-            <span></span>
-            <input type="checkbox" name="side-hide-right" id="check">
-            <label for="check" class="checkbtn"><i class="fa far fas fa-bars"></i></label>
-            <ul>
-                <li><a class="active" href="/index.html">Home </a></li>
-                <li><a href="/HTML.html">HTML5</a></li>
-                <li><a href="/CSS3.html">CSS3</a></li>
-                <li><a href="#">JAVASCRIPT</a></li>
-                <li><a href="#">REACT</a></li>
-            </ul>
-        </nav>
             <div class="container">
                 <div class="row">
                     <div class="col col-12">
                         <pre>
                             <code>
-&lt;nav&gt;
-    &lt;label class="logo"&gt;DevsWeb&lt;/label&gt;
-    &lt;span&gt;&lt;/span&gt;
-    &lt;span&gt;&lt;/span&gt;
-    &lt;span&gt;&lt;/span&gt;
-    &lt;input type="checkbox" name="side-hide-right" id="check"&gt;
-    &lt;label for="check" class="checkbtn"&gt;&lt;i class="fa far fas fa-bars"&gt;&lt;/i&gt;&lt;/label&gt;
-    &lt;ul&gt;
-        &lt;li&gt;&lt;a class="active" href="/index.html"&gt;Home &lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="/HTML.html"&gt;HTML5&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="/CSS3.html"&gt;CSS3&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;JAVASCRIPT&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;REACT&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/nav&gt;
+
                             </code>
                         </pre>
                     </div>
@@ -111,166 +82,7 @@
                     <div class="col col-12">
                         <pre>
                             <code>                    
-body{
-    display: block;
-    position: relative;
-    --bs-body-bg: #121230;
-    background:var(--bs-body-bg);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-    nav{
-        background: dodgerblue;
-        height: 60px;
-        display: flex;
-        justify-content: space-between;
-     }
-     nav .logo{
-        position: absolute;
-        left: 65px;
-        padding: 15px;
-        font-size: 20px;
-     }
-     
-     nav .logo::first-letter{
-        font-size: 25px;
-     }
-     nav span:nth-child(2):after{
-        content: "";
-        position: absolute;
-        height: 30px;
-        left: 160px;
-        top: 0px;
-        width: 2px;
-        transform: rotate(90deg);
-        background: beige;
-        color: aliceblue;
-     }
-     nav span:nth-child(2)::before{
-        content: "";
-        position: absolute;
-        left: 175px;
-        top: 14px;
-        background: white;
-        height: 18px;
-        width: 2px;
-     }
-     
-     nav span:nth-child(3)::after{
-        content: "";
-        position: absolute;
-        top: 28px;
-        left:80px;
-        background: white;
-        transform: rotate(90deg);
-        height: 30px;
-        width: 2px;
-     }
-     nav span:nth-child(3)::before{
-        content: "";
-        position: absolute;
-        left: 65px;
-        top: 24px;
-        background: white;
-        height: 20px;
-        width: 2px
-     }
-     nav span:nth-child(4)::before{
-        content: "";
-        position: absolute;
-        left: 58px;
-        top: 30px;
-        background: rgb(204, 207, 10);
-        height: 18px;
-        width: 2px;
-        color: aliceblue;
-     }
-     nav span:nth-child(4)::after{
-        content: "";
-        position: absolute;
-        top: 33px;
-        left:73px;
-        background: #cccf0a;
-        transform: rotate(90deg);
-        height: 30px;
-        width: 2px;
-     }
-     nav ul{
-        margin-top: 5px;
-        margin-right: 20px;
-        list-style: none;
-        float:left;
-     }
-     nav ul li{
-        padding: 15px;
-        display: inline-block;
-        margin: 0 5px;
-     }
-     nav ul li a{
-        text-decoration: none;
-        font-weight: 900;
-        color: aliceblue;
-        padding: 7px 13px;
-        border-radius: 5px;
-     }
-     a.active,a:hover{
-        color: #134374;
-        transition: 0.6s all ease-in-out;
-        background-color: aliceblue;
-     }
-     .checkbtn{
-        font-size: 40px;
-        margin-top: 8px;
-        color: azure;
-        margin-right: 20px;
-        cursor: pointer;
-        display: none;
-     }
-     #check{
-        display: none;
-     }
-     @media (max-width: 952px){
-        ul li a{
-           display: none;
-        }
-        nav .logo{
-           left: 70px;
-           font-size: 18px;
-        }
-        nav .logo::first-letter{
-           font-size: 20px;
-        } 
-     }
-      @media only screen and (max-width:858px){
-     .checkbtn{
-        display: block;
-     }
-     ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #134374;
-        top: 55px;
-        left: -100%;
-        padding-inline-start: 0px;
-        transition: all 0.5s;
-        text-align: center;
-     }
-     nav ul li{
-        display: block;
-     }
-     nav ul li a{
-        font-size: 25px;
-        display: block;
-        color: aliceblue;
-     }
-     a:hover,a.active{
-        background: none;
-        color: #000;
-     }
-     #check:checked ~ ul{
-        left: 0;
-     }
-      }
+
                             </code>
                         </pre>
                     </div>
