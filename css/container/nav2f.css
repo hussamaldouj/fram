@@ -1,3 +1,4 @@
+
 body{
     display: block;
     position: relative;
@@ -5,3 +6,161 @@ body{
     background:var(--bs-body-bg);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
+.material-icons{
+    font-weight: normal;
+    font-style: normal;
+    font-size: 30px;
+    display: inline-block;
+    color: #fff;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+}
+.FABMenu{
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 420px;
+    height: 50px;
+}
+.FABMenu input{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    z-index: 20;
+    border-radius: 80px;
+    opacity: 0;
+    cursor: pointer;
+}
+.hamburger{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-color: #101041;
+    border-radius: 100%;
+    box-shadow: 0px 50px 20px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+    cursor: pointer;
+}
+.hamburger .dots span{
+    position: absolute;
+    top: 45%;
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 8px;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+}
+.first{
+    margin-left: 0.4em;
+}
+.second{
+    margin-left: 1.3em;
+}
+.third{
+    margin-left: 2.3em;
+}
+.FABMenu input:checked ~ .hamburger .dots .first {
+    top:11px;
+    height: 40px;
+    transform-origin: top;
+    transform: rotate(-45deg);
+    transition: all 0.3s ease-in-out;
+}
+.FABMenu input:checked ~ .hamburger .dots .third {
+    top: 11px;
+    height: 40px;
+    transform-origin: top;
+    transform: rotate(45deg);
+    transition: all 0.3s ease-in-out;
+}
+.action_items_bar{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 8.5%;
+    left: 0%;
+    width: auto;
+    height: 40px;
+    background-color: #acaccafa;
+    backdrop-filter: blur(10px);
+    border-radius: 60px;
+    z-index: 5;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+.FABMenu input:checked ~ .action_items_bar{
+    transform: scaleX(1);
+}
+.action_items{
+    display: flex;
+    width: auto;
+    gap: 70px;
+    margin-left: 40px;
+    margin-right: 40px;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.action_items span{
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.FABMenu input:checked ~ .action_items_bar .action_items .first_item{
+    opacity: 1;
+    transition-delay: .45s;
+}
+.FABMenu input:checked ~ .action_items_bar .action_items .second_item{
+    opacity: 1;
+    transition-delay:.40s;
+}
+.FABMenu input:checked ~ .action_items_bar .action_items .third_item{
+    opacity: 1;
+    transition-delay:.40s;
+}
+.FABMenu input:checked ~ .action_items_bar .action_items .fourth_item{
+    opacity: 1;
+    transition-delay:.45s;
+}
+.FABMenu .action_items .first_item i{
+    color: #1e87f0;
+}
+.FABMenu .action_items .second_item i{
+    color: #df3c0b;
+}
+.FABMenu .action_items .third_item i{
+    color: #0d31d1;
+}
+.FABMenu .action_items .fourth_item i{
+    color: #dfd110;
+}
+.FABMenu .action_items span i:hover{
+    color: #cbd0d4;
+    transition:  ease 0.6s;
+}
+@media only screen and (max-width: 575px){
+    .FABMenu{
+        width: 350px;
+    }
+    .action_items {
+        gap: 60px;
+    }
+}
