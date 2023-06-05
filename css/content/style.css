@@ -374,6 +374,11 @@ width: 100%;
 height: 250px;
 position: relative;
 }
+.overly img{
+  width: 100%;
+  height: 250px;
+  object-fit: fill;
+}
 /* end content header */
 img{
 width: 100%;
