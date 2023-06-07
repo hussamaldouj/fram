@@ -69,14 +69,16 @@
 </head>
     <body>    
         <div class="tabs">
-            <input type="radio" name="tab" id="home" checked="checked">
-            <label for="home"><a href="/index.html"><i class="fas fa-home"></i></a></label>
             <input type="radio" name="tab" id="html">
             <label for="html"><a href="/HTML.html"><i class="fa fab fa-html5"></i></a></label>
             <input type="radio" name="tab" id="css">
             <label for="css"><a href="/CSS3.html"><i class="fa fab fa-css3"></i></a></label>
+            <input type="radio" name="tab" id="home" checked="checked">
+            <label for="home"><a href="/index.html"><i class="fas fa-home"></i></a></label>
             <input type="radio" name="tab" id="javascript">
             <label for="javascript"><a href="#javascript"><i class="fa fab fa-js"></i></a></label>
+            <input type="radio" name="tab" id="php">
+            <label for="php"><a href="#php"><i class="fa fab fa-php"></i></a></label>
             <div class="bubble"></div>
             <div class="liquid">
                 <div class="liquid-tab">
@@ -90,14 +92,16 @@
                         <pre>
                             <code>
     &lt;div class="tabs"&gt;
-        &lt;input type="radio" name="tab" id="home" checked="checked"&gt;
-        &lt;label for="home"&gt;&lt;a href="/index.html"&gt;&lt;i class="fas fa-home"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/label&gt;
         &lt;input type="radio" name="tab" id="html"&gt;
         &lt;label for="html"&gt;&lt;a href="/HTML.html"&gt;&lt;i class="fa fab fa-html5"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/label&gt;
         &lt;input type="radio" name="tab" id="css"&gt;
         &lt;label for="css"&gt;&lt;a href="/CSS3.html"&gt;&lt;i class="fa fab fa-css3"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/label&gt;
+        &lt;input type="radio" name="tab" id="home" checked="checked"&gt;
+        &lt;label for="home"&gt;&lt;a href="/index.html"&gt;&lt;i class="fas fa-home"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/label&gt;
         &lt;input type="radio" name="tab" id="javascript"&gt;
         &lt;label for="javascript"&gt;&lt;a href="#javascript"&gt;&lt;i class="fa fab fa-js"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/label&gt;
+        &lt;input type="radio" name="tab" id="php"&gt;
+        &lt;label for="php"&gt;&lt;a href="#php"&gt;&lt;i class="fa fab fa-php"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/label&gt;
         &lt;div class="bubble"&gt;&lt;/div&gt;
         &lt;div class="liquid"&gt;
             &lt;div class="liquid-tab"&gt;
@@ -123,27 +127,34 @@
     
        /* start nav-bar-2 */
        .tabs {
-        margin: 50px auto;
-        width: 600px;
+        margin: 20px auto;
+        width: 550px;
         height: 75px;
+        bottom: 0px;
+        left: 50%;
+        transform: translate(-50%, 10px);
         display: flex;
         justify-content: center;
         align-items: flex-end;
-        position: relative;
+        position: fixed;
       }
       input {
         display: none;
+      }
+      label a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
       label {
         cursor: pointer;
         z-index: 2;
         width: 20%;
-        padding-bottom: 20px;
+        top: 0%;
         height: 75px;
         display: flex;
         position: relative;
         justify-content: center;
-        align-items: center;
       }
       label a i {
         color: #ffd300;
@@ -163,7 +174,7 @@
       }
       .liquid-tab {
         width: 100%;
-        height: 75px;
+        height: 70px;
         background: #000000;
         display: flex;
         justify-content: center;
@@ -172,17 +183,17 @@
       .active {
         position: absolute;
         left: 25px;
-        width: 75px;
-        height: 30px;
+        width: 65px;
+        height: 35px;
         background: #fff;
         transition: 0.25s cubic-bezier(0.18, -0.1, 0.8, 1.6);
       }
       .bubble {
         position: absolute;
-        width: 70px;
+        width: 65px;
         height: 55px;
         background: #000000;
-        top: -35px;
+        top: -30px;
         left: 25px;
         margin: auto;
         z-index: 1;
@@ -191,22 +202,37 @@
       }
        #home:checked ~ .bubble,
        #home:checked ~ div div .active{
-        left: 100px;
+        left: 44.5%;
        }
        #html:checked ~ .bubble,
        #html:checked ~ div div .active{
-        left: 36%;
+        left: 4.5%;
        }
        #css:checked ~ .bubble,
        #css:checked ~ div div .active{
-        left: 56%;
+        left: 24.5%;
        }
        #javascript:checked ~ .bubble,
        #javascript:checked ~ div div .active{
-        left: 76%;
+        left: 64.5%;
+       }
+       #php:checked ~ .bubble,
+       #php:checked ~ div div .active{
+        left: 84.5%;
        }
        input:checked + label {
         top: -40px;
+      }
+      @media only screen and (max-width:575px){
+        .tabs{
+          width: 90%;
+        }
+        .bubble{
+          width: 60px;
+        }
+        label a{
+          margin-left: 15px;
+        }
       }
                             </code>
                         </pre>
