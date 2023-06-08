@@ -5,7 +5,7 @@ body{
     background:var(--bs-body-bg);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
-/* start nav-bar-3 on header */
+/* start nav-bar on header */
 .nav2b{
     display: flex;
     flex-wrap: wrap;

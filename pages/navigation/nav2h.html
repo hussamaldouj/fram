@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">                                                
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <style>
+        /* start col */
+    .col{
+    align-items: center;
+    color: #000;
+    background-color: #fff;
+    border: unset;
+    text-align: justify;
+    font-size: 20px;
+    margin: 5px;
+    border-radius: 10px;
+    }
+    /* end col */
+    /*start container*/
+    .container {
+    --bs-gutter-x: 0rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    }
+    /* end container */
+    /* start row */
+    .row{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 5px 20px 5px 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    }
+    /* end row */
+    .col-12{
+        width: 100%;
+        }
+        @media only screen and (max-width: 768px){
+            .row{
+                flex-wrap: wrap;
+            }
+    }
+    pre {
+        -webkit-overflow-scrolling: touch;
+        word-wrap: normal;
+        background-color: #04033a;
+        color: #fafafa;
+        font-size: 14px;
+        overflow-x: scroll;
+        padding: 1.25rem 1.5rem;
+        white-space: pre;
+    }
+    code, pre {
+    -moz-osx-font-smoothing: auto;
+    -webkit-font-smoothing: auto;
+    font-family: monospace;
+    }
+    </style>
+    <link rel="stylesheet" href="/css/container/nav2h.css">
+    <link rel="stylesheet" href="/css/vendors/animate.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">                               
+    <title>framework template</title>                                                                                                                                              
+</head>
+    <body>  
+        <nav class="nav2h">
+                <div class="box"><a href="/HTML.html"><i class="fa fab fa-html5"></i></a></div>
+                <div class="box"><a href="/CSS3.html"><i class="fa fab fa-css3"></i></a></div>
+                <div class="box"><a href="/index.html"><i class="fa fas fa-home fa-bounce"></i></a></div>
+                <div class="box"><a href="#javascrips"><i class="fa fab fa-js"></i></a></div>
+                <div class="box"><a href="#php"><i class="fab fa-php"></i></a></div>
+        </nav>  
+            <div class="container">
+                <div class="row">
+                    <div class="col col-12">
+                        <pre>
+                            <code>
+    &lt;nav class="nav2h"&gt;
+        &lt;div class="box"&gt;&lt;a href="/HTML.html"&gt;&lt;i class="fa fab fa-html5"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;div class="box"&gt;&lt;a href="/CSS3.html"&gt;&lt;i class="fa fab fa-css3"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;div class="box"&gt;&lt;a href="/index.html"&gt;&lt;i class="fa fas fa-home fa-bounce"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;div class="box"&gt;&lt;a href="#javascrips"&gt;&lt;i class="fa fab fa-js"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;div class="box"&gt;&lt;a href="#php"&gt;&lt;i class="fab fa-php"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;/nav&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-12">
+                        <pre>
+                            <code>                    
+    body{
+        display: block;
+        position: relative;
+        --bs-body-bg: #121230;
+        background:var(--bs-body-bg);
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    
+       /* start nav-bar */
+       .nav2h{
+        width: 300px;
+        bottom: 10px;
+        left: 50%;
+        border-radius: 50px;
+        background: #3d3636;
+        color: #fff;
+        transform: translate(-50%, -10px);
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+      
+       }
+       .nav2h::before{
+        content: '';
+        position: absolute;
+        top: -5%;
+        left: -1.5%;
+        width: 100%;
+        height: 100%;
+        border-radius: 67px;
+        background: linear-gradient(to right,#3f574300,#272727);
+        z-index: -1;
+        transition: background 4s;
+       }
+       .nav2h:hover::before{
+        background: linear-gradient(to right,#434244,#e0dfe4);
+       }
+       .box{
+        width: 80px;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 60px;
+        cursor: pointer;
+        transition: transform 0.4s;
+    }
+        .box:hover{
+            transform: translatey(-10px);
+            background: linear-gradient(to right,#ffffff,#9e92b1);
+        }
+        i{
+            font-size: 25px;
+            color: #fff;
+            cursor: pointer;
+            transition: transform 0.4s;
+        }
+        .box:hover i{
+            transform: scale(1.5);
+        }
+        .box:hover:nth-child(1) a i{
+            color: #1e87f0;
+        }
+        .box:hover:nth-child(2) a i{
+            color: #df3c0b;
+        }
+        .box:hover:nth-child(3) a i{
+            color: #0d31d1;
+        }
+        .box:hover:nth-child(4) a i{
+            color: #dfd110;
+        }
+        .box:hover:nth-child(5) a i{
+            color: #be0fe0;
+        }
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>

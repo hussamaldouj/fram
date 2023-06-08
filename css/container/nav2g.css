@@ -6,7 +6,7 @@ body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
-   /* start nav-bar-2 */
+   /* start nav-bar */
    .tabs {
     margin: 20px auto;
     width: 550px;
@@ -71,7 +71,7 @@ body{
   }
   .bubble {
     position: absolute;
-    width: 65px;
+    width: 60px;
     height: 55px;
     background: #000000;
     top: -30px;
