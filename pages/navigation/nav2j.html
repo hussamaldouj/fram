@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">                                                
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <style>
+        /* start col */
+    .col{
+    align-items: center;
+    color: #000;
+    background-color: #fff;
+    border: unset;
+    text-align: justify;
+    font-size: 20px;
+    margin: 5px;
+    border-radius: 10px;
+    }
+    /* end col */
+    /*start container*/
+    .container {
+    --bs-gutter-x: 0rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    }
+    /* end container */
+    /* start row */
+    .row{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 5px 20px 5px 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    }
+    /* end row */
+    .col-12{
+        width: 100%;
+        }
+        @media only screen and (max-width: 768px){
+            .row{
+                flex-wrap: wrap;
+            }
+    }
+    pre {
+        -webkit-overflow-scrolling: touch;
+        word-wrap: normal;
+        background-color: #04033a;
+        color: #fafafa;
+        font-size: 14px;
+        overflow-x: scroll;
+        padding: 1.25rem 1.5rem;
+        white-space: pre;
+    }
+    code, pre {
+    -moz-osx-font-smoothing: auto;
+    -webkit-font-smoothing: auto;
+    font-family: monospace;
+    }
+    </style>
+    <link rel="stylesheet" href="/css/container/nav2j.css">
+    <link rel="stylesheet" href="/css/vendors/animate.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">                               
+    <title>framework template</title>                                                                                                                                              
+</head>
+    <body>  
+        <ul> 
+            <li>
+                <a href="/HTML.html">
+                    <i class="fa fab fa-html5" aria-hidden="true"></i>
+                </a>
+                <span>HTML5</span>
+            </li> 
+            <li>
+                <a href="/CSS3.html">
+                    <i class="fa fab fa-css3" aria-hidden="true"></i>
+                </a>
+                <span>CSS3</span>
+            </li>
+            <li>
+                <a href="/index.html">
+                    <i class="fas fa-home fa-bounce" aria-hidden="true"></i>
+                </a>
+                <span>HOME</span>
+            </li> 
+            <li>
+                <a href="#javascript">
+                    <i class="fa fab fa-js" aria-hidden="true"></i>
+                </a>
+                <span>JAVASCRIPT</span>
+            </li>
+            <li>
+                <a href="#php">
+                    <i class="fa fab fa-php" aria-hidden="true"></i>
+                </a>
+                <span>PHP</span>
+           </li>
+        </ul> 
+            <div class="container">
+                <div class="row">
+                    <div class="col col-12">
+                        <pre>
+                            <code>
+&lt;ul&gt; 
+    &lt;li&gt;
+        &lt;a href="/HTML.html"&gt;
+            &lt;i class="fa fab fa-html5" aria-hidden="true"&gt;&lt;/i&gt;
+        &lt;/a&gt;
+        &lt;span&gt;HTML5&lt;/span&gt;
+    &lt;/li&gt; 
+    &lt;li&gt;
+        &lt;a href="/CSS3.html"&gt;
+            &lt;i class="fa fab fa-css3" aria-hidden="true"&gt;&lt;/i&gt;
+        &lt;/a&gt;
+        &lt;span&gt;CSS3&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href="/index.html"&gt;
+            &lt;i class="fas fa-home fa-bounce" aria-hidden="true"&gt;&lt;/i&gt;
+        &lt;/a&gt;
+        &lt;span&gt;HOME&lt;/span&gt;
+    &lt;/li&gt; 
+    &lt;li&gt;
+        &lt;a href="#javascript"&gt;
+            &lt;i class="fa fab fa-js" aria-hidden="true"&gt;&lt;/i&gt;
+        &lt;/a&gt;
+        &lt;span&gt;JAVASCRIPT&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href="#php"&gt;
+            &lt;i class="fa fab fa-php" aria-hidden="true"&gt;&lt;/i&gt;
+        &lt;/a&gt;
+        &lt;span&gt;PHP&lt;/span&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-12">
+                        <pre>
+                            <code>                    
+    body{
+        display: block;
+        position: relative;
+        --bs-body-bg: #121230;
+        background:var(--bs-body-bg);
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    
+       /* start nav-bar */
+       ul{
+        position : fixed;
+        bottom: 10px;
+        left : 50%;
+        transform : translate( -50%, -10px);
+        list-style : none;
+        overflow : hidden;
+        display : flex;
+        border-radius : 5px;
+        padding-inline-start: 0px;
+       }
+       li{
+        width: 45px;
+        padding : 15px 15px;
+        background : #fff;
+        text-align : center;
+       }
+       li i{
+        font-size : 1.5em;
+        transition : .5s;
+        color: #01173f;
+        transform : scale(1.2) translateY(5px);
+       }
+       span{
+        display : block;
+        transition : .5s ease;
+        font-size : 10px;
+        font-weight: 800;
+        font-family : monospace;
+        transform : translateY(50px);
+        text-transform : uppercase;
+       }
+       li:hover i{
+        transform : scale(1) translateY(-5px);
+       }
+       li:hover span{
+        transform: translateY(0);
+       }
+       ul li:hover{
+        cursor: pointer;
+        background : #000000;
+        color : #e2e2e2;
+       }
+       ul li:hover:nth-child(1) a i{
+        color: #1e87f0;
+        }
+        ul li:hover:nth-child(2) a i{
+            color: #df3c0b;
+        }
+        ul li:hover:nth-child(3) a i{
+            color: #0d31d1;
+        }
+        ul li:hover:nth-child(4) a i{
+            color: #dfd110;
+        }
+        ul li:hover:nth-child(5) a i{
+            color: #be0fe0;
+        }  
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>

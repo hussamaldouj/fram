@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">                                                
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <style>
+        /* start col */
+    .col{
+    align-items: center;
+    color: #000;
+    background-color: #fff;
+    border: unset;
+    text-align: justify;
+    font-size: 20px;
+    margin: 5px;
+    border-radius: 10px;
+    }
+    /* end col */
+    /*start container*/
+    .container {
+    --bs-gutter-x: 0rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    }
+    /* end container */
+    /* start row */
+    .row{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 5px 20px 5px 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    }
+    /* end row */
+    .col-12{
+        width: 100%;
+        }
+        @media only screen and (max-width: 768px){
+            .row{
+                flex-wrap: wrap;
+            }
+    }
+    pre {
+        -webkit-overflow-scrolling: touch;
+        word-wrap: normal;
+        background-color: #04033a;
+        color: #fafafa;
+        font-size: 14px;
+        overflow-x: scroll;
+        padding: 1.25rem 1.5rem;
+        white-space: pre;
+    }
+    code, pre {
+    -moz-osx-font-smoothing: auto;
+    -webkit-font-smoothing: auto;
+    font-family: monospace;
+    }
+    </style>
+    <link rel="stylesheet" href="/css/container/nav2i.css">
+    <link rel="stylesheet" href="/css/vendors/animate.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">                               
+    <title>framework template</title>                                                                                                                                              
+</head>
+    <body>  
+        <ul class="nav2i" id="menu_mobile">
+            <li><a href="/HTML.html"><span>HTML5</span><span><i class="fa fa-2x fa fab fa-html5"></i></span></a></li>
+            <li><a href="/CSS3.html"><span>CSS3</span><span><i class="fa fa-2x fab fa-css3"></i></span></a> </li>
+            <li><a href="/index.html"><span>Home</span><span><i class="fa fa-2x fas fa-home fa-bounce"></i></span></a></li>
+            <li><a href="#javascrpit"><span>JAVASCRIPT</span><span><i class="fa fa-2x fab fa-js"></i></span></a></li>
+            <li><a href="#php"><span >php</span><span><i class="fa fa-2x fab fa-php"></i></span></a></li>               
+        </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col col-12">
+                        <pre>
+                            <code>
+    &lt;ul class="nav2i" id="menu_mobile"&gt;
+        &lt;li&gt;&lt;a href="/HTML.html"&gt;&lt;span&gt;HTML5&lt;/span&gt;&lt;span&gt;&lt;i class="fa fa-2x fa fab fa-html5"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="/CSS3.html"&gt;&lt;span&gt;CSS3&lt;/span&gt;&lt;span&gt;&lt;i class="fa fa-2x fab fa-css3"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/a&gt; &lt;/li&gt;
+        &lt;li&gt;&lt;a href="/index.html"&gt;&lt;span&gt;Home&lt;/span&gt;&lt;span&gt;&lt;i class="fa fa-2x fas fa-home fa-bounce"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#javascrpit"&gt;&lt;span&gt;JAVASCRIPT&lt;/span&gt;&lt;span&gt;&lt;i class="fa fa-2x fab fa-js"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#php"&gt;&lt;span &gt;php&lt;/span&gt;&lt;span&gt;&lt;i class="fa fa-2x fab fa-php"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;               
+    &lt;/ul&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-12">
+                        <pre>
+                            <code>                    
+    body{
+        display: block;
+        position: relative;
+        --bs-body-bg: #121230;
+        background:var(--bs-body-bg);
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    
+       /* start nav-bar */
+       ul.nav2i{
+        letter-spacing: 0px;
+        bottom: 10px;
+        left: 50%;
+        transform: translate(-50%, -10px);
+        position: fixed;
+        display: flex;
+        z-index: 999;
+        list-style: none;
+        }
+        ul li{
+        margin: 0px 0px;
+        }
+        ul li a{
+        text-decoration: none;
+        color: #b810c7 ;
+        height: 55px;
+        font-weight: 600;
+        line-height: 50px;
+        display: flex;
+        flex-direction: row-reverse;
+        }
+        ul li a i{
+        color: #b810c7 ;
+        }
+        ul li  a span i{
+        padding-left: 0px;
+        width: 40px;
+        }
+        ul li a span:nth-child(2){
+        margin: 0px;
+        display: grid;
+        place-items: center;
+        border-style: outset;
+        text-align: center;
+        border-width: 4px;
+        border-color: #160d1473;
+        box-shadow: -4px -1px 0px 0px #000000, 0px 0px 0px;
+        width: 40px;
+        height:75%;
+        border-radius: 50%;
+        }
+        ul li a span:nth-child(1){
+        width: 0px;
+        height: 80%;
+        font-size: 17px;
+        background: #160d1473;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        overflow: hidden;
+        margin-right: 5px;
+        border-radius: 50px 30px 30px 50px;
+        transition: 0.3s ease;
+        backdrop-filter: blur(5px);
+        box-shadow: 6px 6px 0px 0px #000000, 0px 0px 0px;
+        text-align: center;
+        }
+        ul li a:hover span:nth-child(1){
+        width: 100px;
+        padding-left: 10px;
+        }
+      li:nth-child(1) a i{
+          color: #1e87f0;
+      }
+      li:nth-child(2) a i{
+          color: #df3c0b;
+      }
+       li:nth-child(3) a i{
+          color: #0d31d1;
+      }
+       li:nth-child(4) a i{
+          color: #dfd110;
+      }
+       li:nth-child(5) a i{
+          color: #0d31d1;
+      }
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>
