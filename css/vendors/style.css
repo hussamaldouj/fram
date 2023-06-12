@@ -823,7 +823,7 @@ label.active{
   flex-direction: column;
 }
 .card-nav .con-text p button{
-  padding: 7px 17px;
+  padding: 5px 17px;
   border-radius: 12px;
   background:#ced4da;
   border: 2px solid #ced4da;;
