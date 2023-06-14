@@ -427,7 +427,7 @@ margin-right: 2px;
 list-style: none;
 height: auto;
 display: none;
-
+transition: all 0.9s ease;
 }
 .main-accordion p{
 color: #000;
@@ -807,7 +807,7 @@ label.active{
   z-index: 30;
   position: absolute;
   bottom: 0px;
-  color: #ffffff;
+  color: #5af0f9;
   text-align: center;
   padding: 20px;
   padding-bottom: 0px;

@@ -15,7 +15,7 @@ body{
   left : 50%;
   transform : translate( -50%, -10px);
 }
-.nav2L{
+.nav2m{
   position: relative;
   height: 60px;
   min-width: 300px;
@@ -40,19 +40,19 @@ i:hover{
   animation-name: start;
   animation-direction: alternate-reverse;
 }
-.warpper .nav2L a:nth-child(1) i{
+.warpper .nav2m a:nth-child(1) i{
   color: #df3c0b;
 }
-.warpper .nav2L a:nth-child(2) i{
+.warpper .nav2m a:nth-child(2) i{
   color: #1e87f0;
 }
-.warpper .nav2L a:nth-child(3) i{
+.warpper .nav2m a:nth-child(3) i{
   color: #f5078a;
 }
-.warpper .nav2L a:nth-child(4) i{
+.warpper .nav2m a:nth-child(4) i{
   color: #dfd110;
 }
-.warpper .nav2L a:nth-child(5) i{
+.warpper .nav2m a:nth-child(5) i{
   color: #0d31d1;
 }
 @keyframes start{
@@ -60,30 +60,30 @@ i:hover{
 
   }
   50%{
-    transform: translateY(-49px)rotate(370deg)translateX(6px);
+    transform: translateY(-50px)translateX(2px);
   }
 }
-.warpper .nav2L a:nth-child(1) i:hover{
+.warpper .nav2m a:nth-child(1) i:hover{
   color: #fff;
   background-color: #df3c0b;
   transition: all 0.5s ease;
 }
-.warpper .nav2L a:nth-child(2) i:hover{
+.warpper .nav2m a:nth-child(2) i:hover{
   color: #fff;
   background-color: #1e87f0;
   transition: all 0.5s ease;
 }
-.warpper .nav2L a:nth-child(3) i:hover{
+.warpper .nav2m a:nth-child(3) i:hover{
   color: #fff;
   background-color: #f5078a;
   transition: all 0.5s ease;
 }
-.warpper .nav2L a:nth-child(4) i:hover{
+.warpper .nav2m a:nth-child(4) i:hover{
   color: #fff;
   background-color: #dfd110;
   transition: all 0.5s ease;
 }
-.warpper .nav2L a:nth-child(5) i:hover{
+.warpper .nav2m a:nth-child(5) i:hover{
   color: #fff;
   background-color: #0d31d1;
   transition: all 0.5s ease;

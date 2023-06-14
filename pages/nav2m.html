@@ -62,14 +62,14 @@
     font-family: monospace;
     }
     </style>
-    <link rel="stylesheet" href="../css/container/nav2L.css">
+    <link rel="stylesheet" href="../css/container/nav2m.css">
     <link rel="stylesheet" href="../css/vendors/animate.css">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">                               
     <title>framework template</title>                                                                                                                                              
 </head>
-    <body>
+    <body>    
         <div class="warpper">
-            <div class="nav2L">
+            <div class="nav2m">
                 <a href="./HTML.html" class="icon">
                     <i class="fa fab fa-html5" aria-hidden="true"></i>
                 </a>
@@ -78,7 +78,7 @@
                 </a>
                 <a href="../index.html" class="icon-home"><i class="fas fa-home " aria-hidden="true"></i></a>
                 <a href="#javascript" class="icon">
-                    <i class="fa fab fa-js" aria-hidden="true"></i>
+                    <i class="fa fab fa-js-square" aria-hidden="true"></i>
                 </a>
                 <a href="#php" class="icon">
                     <i class="fa fab fa-php" aria-hidden="true"></i>
@@ -91,7 +91,7 @@
                     <pre>
                         <code>
     &lt;div class="wrapper"&gt;
-        &lt;div class="nav2L"&gt;
+        &lt;div class="nav2m"&gt;
             &lt;a href="./HTML.html" class="icon"&gt;
                 &lt;i class="fa fab fa-html5" aria-hidden="true"&gt;&lt;/i&gt;
             &lt;/a&gt;
@@ -100,7 +100,7 @@
             &lt;/a&gt;
             &lt;a href="../index.html" class="icon-home"&gt;&lt;i class="fas fa-home " aria-hidden="true"&gt;&lt;/i&gt;&lt;/a&gt;
             &lt;a href="#javascript" class="icon"&gt;
-                &lt;i class="fa fab fa-js" aria-hidden="true"&gt;&lt;/i&gt;
+                &lt;i class="fa fa-js-square" aria-hidden="true"&gt;&lt;/i&gt;
             &lt;/a&gt;
             &lt;a href="#php" class="icon"&gt;
                 &lt;i class="fa fab fa-php" aria-hidden="true"&gt;&lt;/i&gt;
@@ -111,10 +111,10 @@
                     </pre>
                 </div>
             </div>
-            <div class="row">
-                <div class="col col-12">
-                    <pre>
-                        <code>                    
+                <div class="row">
+                    <div class="col col-12">
+                        <pre>
+                            <code>                    
     body{
       display: block;
       position: relative;
@@ -132,7 +132,7 @@
       left : 50%;
       transform : translate( -50%, -10px);
     }
-    .nav2L{
+    .nav2m{
       position: relative;
       height: 60px;
       min-width: 300px;
@@ -142,10 +142,9 @@
       justify-content: space-between;
       align-items: center;
       border-radius: 25px;
-      background-color: #575477;    
+      background-color: #fff;    
     }
     i{
-      color: #d1d1d1;
       padding: 10px 18px;
       display: inline-block;
       margin: 2px;
@@ -158,34 +157,58 @@
       animation-name: start;
       animation-direction: alternate-reverse;
     }
+    .warpper .nav2m a:nth-child(1) i{
+      color: #df3c0b;
+    }
+    .warpper .nav2m a:nth-child(2) i{
+      color: #1e87f0;
+    }
+    .warpper .nav2m a:nth-child(3) i{
+      color: #f5078a;
+    }
+    .warpper .nav2m a:nth-child(4) i{
+      color: #dfd110;
+    }
+    .warpper .nav2m a:nth-child(5) i{
+      color: #0d31d1;
+    }
     @keyframes start{
       0%{
     
       }
       70%{
-        transform: translateY(-49px)rotate(370deg)translateX(6px);
-        background-color: #8000ff;
+        transform: translateY(-50px)translateX(2px);
       }
     }
-    .warpper .nav2L a:nth-child(1) i:hover{
-      color: #df3c0b;
+    .warpper .nav2m a:nth-child(1) i:hover{
+      color: #fff;
+      background-color: #df3c0b;
       transition: all 0.5s ease;
     }
-    .warpper .nav2L a:nth-child(2) i:hover{
-      color: #1e87f0;
-    }
-    .warpper .nav2L a:nth-child(4) i:hover{
-      color: #dfd110;
+    .warpper .nav2m a:nth-child(2) i:hover{
+      color: #fff;
+      background-color: #1e87f0;
       transition: all 0.5s ease;
     }
-    .warpper .nav2L a:nth-child(5) i:hover{
-      color: #0d31d1;
+    .warpper .nav2m a:nth-child(3) i:hover{
+      color: #fff;
+      background-color: #f5078a;
       transition: all 0.5s ease;
-    }                              
-                        </code>
-                    </pre>
+    }
+    .warpper .nav2m a:nth-child(4) i:hover{
+      color: #fff;
+      background-color: #dfd110;
+      transition: all 0.5s ease;
+    }
+    .warpper .nav2m a:nth-child(5) i:hover{
+      color: #fff;
+      background-color: #0d31d1;
+      transition: all 0.5s ease;
+    }                                  
+                            </code>
+                        </pre>
+                    </div>
                 </div>
             </div>
-        </div>
     </body>
 </html>
