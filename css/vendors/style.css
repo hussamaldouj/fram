@@ -72,7 +72,7 @@ scroll-behavior: smooth;
   --bs-highlight-bg: #fff3cd;
 }
 body{
-  --bs-body-bg: rgb(55, 65, 81);;
+  --bs-body-bg: #2c3443;
 min-height: 620px;
 background:var(--bs-body-bg);
 box-shadow: -4px -4px 10px black, 4px 4px 10px black;
@@ -188,7 +188,7 @@ width: 100%;
 /* start nav bar */
 .nav_bar{
 height: 40px;
-background-color: #1a1a4e21;
+background-color: #15152180;
 position: sticky;
 top: 15px;
 z-index: 2;
