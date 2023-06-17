@@ -75,6 +75,7 @@ body{
   --bs-body-bg: #2c3443;
 min-height: 620px;
 background:var(--bs-body-bg);
+box-shadow: -4px -4px 10px black, 4px 4px 10px black;
 display: block;
 position: relative;
 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -426,6 +427,7 @@ margin-right: 2px;
 list-style: none;
 height: auto;
 display: none;
+transition: all 0.9s ease;
 }
 .main-accordion p{
 color: #000;
@@ -438,7 +440,7 @@ padding: 15px;
 border-radius: 10px;
 }
 .head-accordion:hover .main-accordion{
-  display: block;
+display: block;
 }
 /* end accordion */
 /* start HTML*/
@@ -460,7 +462,7 @@ color: #1e87f0;
 justify-content: center;
 }
 .pic_title{
-padding: 10px;
+padding: 0px;
 width: 100%;
 height: 100%;
 border-radius: 5px;
