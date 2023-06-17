@@ -75,7 +75,6 @@ body{
   --bs-body-bg: #2c3443;
 min-height: 620px;
 background:var(--bs-body-bg);
-box-shadow: -4px -4px 10px black, 4px 4px 10px black;
 display: block;
 position: relative;
 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
