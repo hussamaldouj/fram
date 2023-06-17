@@ -390,7 +390,7 @@ border-radius: 5px;
 .head-text h1,.head-accordion h1{
 line-height: unset !important;
 color:#fff;
-background: rgb(27, 49, 94);
+background: rgb(79 90 113);
 border-top-left-radius: 8px;
 border-top-right-radius: 8px;
 border-bottom: unset;
@@ -427,7 +427,6 @@ margin-right: 2px;
 list-style: none;
 height: auto;
 display: none;
-transition: all 0.9s ease;
 }
 .main-accordion p{
 color: #000;
@@ -440,7 +439,7 @@ padding: 15px;
 border-radius: 10px;
 }
 .head-accordion:hover .main-accordion{
-display: block;
+  display: block;
 }
 /* end accordion */
 /* start HTML*/
