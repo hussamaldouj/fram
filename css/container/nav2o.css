@@ -16,18 +16,17 @@ body{
     padding: 0px 60px 0px 43px;
     transform: translate(-50%, 10px);
     display: flex;
-    background-color:rgb(229 208 208 / 2%);;
     justify-content: center;
     align-items: center;
     position: fixed;
-  } 
+  }
   .item{
-    border-right: 1px solid #89af7c;
     display: block;
     float: left;
     white-space: nowrap;
     color: #111;
     font-size: 16px;
+
   }
   .item:last-child{
     margin-right: 0;
@@ -44,6 +43,9 @@ body{
     font-size: 2rem;
     line-height: 3rem;
     vertical-align: middle;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    border-radius: 10px;
     width: 3rem;
     text-align: center;
     margin-right: 0.5rem;
@@ -59,17 +61,32 @@ body{
   }
   .item:nth-child(2) label i{
     color: #df3c0b;
+  }  
+  .item:nth-child(2) label a{
+    color: #df3c0b;
   }
   .item:nth-child(3) label i{
+    color: #1e87f0;
+  }
+  .item:nth-child(3) label a{
     color: #1e87f0;
   }
   .item:nth-child(1) label i{
     color: #f5078a;
   }
+  .item:nth-child(1) label a{
+    color: #f5078a;
+  }
   .item:nth-child(4) label i{
     color: #dfd110;
   }
+  .item:nth-child(4) label a{
+    color: #dfd110;
+  }
   .item:nth-child(5) label i{
+    color: #0d31d1;
+  }
+  .item:nth-child(5) label a{
     color: #0d31d1;
   }
   .expand{
@@ -82,5 +99,4 @@ body{
   }
   .toggle:checked ~ .expand{
     max-width: 250px;
-    background-color: rgb(255, 255, 255);
   }
